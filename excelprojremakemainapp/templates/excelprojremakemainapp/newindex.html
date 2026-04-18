@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="zxx">
+{% load static %}
+   <!-- Mirrored from Alphaoilhedge.com/home by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:01:14 GMT -->
+   <!-- Added by HTTrack -->
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <!-- /Added by HTTrack -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="author" content="Alphaoil Hedge Developers">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Alphaoil Hedge, AlphaOil, Alphaoilhedge.com swap, Buy tokens, send and receive, Crypto, Receive and send, AlphaOil, Alphaoilhedge.com">
+      <meta name=”robots” content=”index, follow”>
+      <!-- Links of CSS files -->
+      <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+      <link rel="stylesheet" href="/static/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/static/assets/css/boxicons.min.css">
+      <link rel="stylesheet" href="/static/assets/css/meanmenu.min.css">
+      <link rel="stylesheet" href="/static/assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="/static/assets/css/fancybox.min.css">
+      <link rel="stylesheet" href="/static/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/static/assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="/static/assets/css/style.css">
+      <link rel="stylesheet" href="/static/assets/css/dark.css">
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+      <title>Alphaoil Hedge</title>
+      <link rel="icon" type="image/png" href="/static/lionhead.png">
+   </head>
+               <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '98ad887ec2850493127b162f2a721623e0a57fbb';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+   <body class="data-science-color-css">
+      <!-- Start Navbar Area -->
+      <div class="navbar-area navbar-area-with-data-science">
+         <div class="dibiz-responsive-nav">
+            <div class="container-fluid">
+               <div class="dibiz-responsive-menu">
+                  <div class="logo">
+                     <a href="{% url 'home' %}">
+                        <img src="/static/front_pages/lionhead.png" style="height: 80px; width: 80px;">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dibiz-nav">
+            <div class="container-fluid">
+               <nav class="navbar navbar-expand-md navbar-light">
+                  <a class="navbar-brand" href="{% url 'home' %}">
+                     <img src="/static/front_pages/lionhead.png" style="height: 80px; width: 80px;">
+                  </a>
+                  <div class="collapse navbar-collapse mean-menu">
+                     <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Company <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+                              </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'plan' %}" class="nav-link">Plans</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Services <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+
+                              <li class="nav-item"><a href="{% url 'renewableEnergy' %}" class="nav-link">Renewable Energy</a></li>
+                              <li class="nav-item"><a href="{% url 'financialService' %}" class="nav-link">Financial Service</a></li>
+                              <li class="nav-item"><a href="{% url 'energy' %}" class="nav-link">Energy</a></li>
+                              <li class="nav-item"><a href="{% url 'portfolioManagement' %}" class="nav-link">Portfolio Management Service</a></li>
+                             <li class="nav-item"><a href="{% url 'financialAdvising' %}" class="nav-link">Financial Advising</a></li>
+
+                            </ul>
+                        </li>
+                        <!--
+                        <li class="nav-item"><a href="tokens.html" class="nav-link">Token Sales</a></li>
+                        <li class="nav-item"><a href="roadmap.html" class="nav-link">Road Map</a></li>
+                        <li class="nav-item"><a href="market.html" class="nav-link">Market Data</a></li>
+                     -->
+                        <li class="nav-item"><a href="{% url 'signin' %}" class="nav-link">Log In</a></li>
+                     </ul>
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <a href="{% url 'signup' %}" class="default-btn">Get Started<i class='flaticon-chevron'></i></a>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="others-option-for-responsive">
+            <div class="container">
+               <div class="dot-menu">
+                  <div class="inner">
+                     <div class="circle circle-one"></div>
+                     <div class="circle circle-two"></div>
+                     <div class="circle circle-three"></div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="option-inner">
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <a href="{% url 'signup' %}" class="default-btn">Get Started <i class='flaticon-chevron'></i></a>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Navbar Area -->
+      <!-- Start Data Science Banner Area -->
+      <section class="ds-main-banner-area">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12">
+                  <div class="ds-banner-content">
+                     <h1 class="wow animate__animated animate__fadeInLeft" data-wow-delay="00ms" data-wow-duration="1000ms">Invest, Earn & Finance with Alphaoil Energy Capital</h1>
+                     <p class="wow animate__animated animate__fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">Alphaoil Energy Capital is a diversified energy investment and financing platform focused on oil, gas, and real-asset opportunities. Our objective is to become the world's most accessible OIL AND GAS hedge investment gateway - where anyone, from seasoned investors to complete beginners, can confidently earn passive income from the oil and gas sector opportunities without the traditional barriers found in commodity trading.</p>
+                     <ul class="btn-box wow animate__animated animate__fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
+                        <li>
+                           <a href="{% url 'signup' %}" class="default-btn">Get Started <i class='flaticon-chevron'></i></a>
+                        </li>
+                        <li>
+                           <a href="{% url 'plan' %}" class="default-btn">Plans <i class='flaticon-chevron'></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="ds-banner-image wow animate__animated animate__fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <img src="/static/oil-factory.jpg" alt="image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="ds-banner-large-shape">
+            <img src="/static/assets/img/data-science/banner/large-shape.png" alt="image">
+         </div>
+         <div class="ds-banner-shape-1">
+            <img src="/static/assets/img/data-science/banner/shape1.png" alt="image">
+         </div>
+         <div class="ds-banner-shape-2">
+            <img src="/static/assets/img/data-science/banner/shape2.png" alt="image">
+         </div>
+         <div class="ds-banner-shape-3">
+            <img src="/static/assets/img/data-science/banner/shape3.png" alt="image">
+         </div>
+      </section>
+      <!-- End Data Science Banner Area -->
+      <!-- Start Services Area -->
+      <div class="ds-services-area pt-100 pb-75">
+         <div class="container">
+            <div class="ds-section-title">
+               <span>Why use Alphaoil Hedge</span>
+               <h2>A Global Energy Investment Platform</h2>
+               <p>Energy remains the backbone of global economic growth. While markets evolve and technology advances, oil and gas continue to play a critical role in powering industries, transportation, and infrastructure worldwide. Alphaoil Energy Capital bridges traditional energy investing with modern asset management practices to deliver resilient performance across cycles</p>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-lg-3 col-md-6">
+                  <div class="ds-services-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/services/automated-engineering.svg" alt="image">
+                        </div>
+                        <h3>
+                           <a href="#">Energy Yield Programs</a>
+                        </h3>
+                        <p>We structure income-focused investment opportunities backed by producing oil and gas assets, infrastructure projects, and commodity-linked revenues—designed to generate stable returns while managing downside risk.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="ds-services-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/services/database.svg" alt="image">
+                        </div>
+                        <h3>
+                           <a href="#">Quantitative & Market-Driven Strategies</a>
+                        </h3>
+                        <p>Our trading and hedging systems utilize disciplined, rules-based strategies to manage exposure to commodity price movements, volatility, and market cycles.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="ds-services-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/services/code.svg" alt="image">
+                        </div>
+                        <h3>
+                           <a href="#">Flexible Capital Access</a>
+                        </h3>
+                        <p>Investors can deploy capital, earn returns, or access structured financing solutions through a streamlined and efficient process.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="ds-services-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/services/report.svg" alt="image">
+                        </div>
+                        <h3>
+                           <a href="#">Real-Time Reporting</a>
+                        </h3>
+                        <p>Our digital reporting environment provides timely insights into asset performance, portfolio allocation, and market conditions—ensuring transparency and informed decision-making.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Services Area -->
+      <!-- Start About Area -->
+      <div class="ds-about-area pb-100">
+         <div class="container">
+            <div class="row justify-content-center align-items-center">
+               <div class="col-lg-5 col-md-12">
+                  <div class="ds-about-image">
+                     <img src="/static/oil_rig_replacement.jpg" alt="image">
+                  </div>
+               </div>
+               <div class="col-lg-7 col-md-12">
+                  <div class="ds-about-content">
+                     <span class="sub">About Alphaoil Hedge Systems</span>
+                     <h3>No Hidden Fees. Clear Structures.</span></h3>
+                     <p>Our platform supports energy assets, commodity exposure, and alternative investments through clearly defined structures. Investors benefit from transparent terms, efficient execution, and institutional-grade oversight.</p>
+                     <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="inner-card">
+                              <div class="icon">
+                                 <img src="/static/assets/img/data-science/about/icon1.svg" alt="image">
+                              </div>
+                              <h4>Integrated <span>Platform Solution</span></h4>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                           <div class="inner-card">
+                              <div class="icon">
+                                 <img src="/static/assets/img/data-science/about/icon2.svg" alt="image">
+                              </div>
+                              <h4>Client <span>Side Encryption</span></h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>Alphaoil Energy Capital offers a unified platform covering: Energy investments, Asset-backed financing, Portfolio management, Risk and performance monitoring</p>
+                     <p>Sensitive information is protected using advanced encryption standards before entering our systems, ensuring confidentiality and operational integrity.</p>
+                     <div class="about-btn">
+                        <a href="{% url 'signup' %}" class="default-btn">Get Started <i class='flaticon-chevron'></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="ds-about-shape">
+            <img src="/static/assets/img/data-science/about/shape.png" alt="image">
+         </div>
+      </div>
+      <!-- End About Area -->
+      <!-- Start Funfacts Area -->
+      <div class="ds-funfacts-area pt-100 pb-75">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-funfacts-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/funfacts/data-mining.svg" alt="image">
+                        </div>
+                        <h3>
+                           <span class="odometer" data-count="332">00</span>
+                           <span class="plus">K+</span>
+                        </h3>
+                        <p>Transactions Completed</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-funfacts-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/funfacts/algorithm.svg" alt="image">
+                        </div>
+                        <h3>
+                           <span class="odometer" data-count="580">00</span>
+                           <span class="plus">m+</span>
+                        </h3>
+                        <p>Community assets</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-funfacts-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/funfacts/multiplication.svg" alt="image">
+                        </div>
+                        <h3>
+                           <span class="odometer" data-count="12">00</span>
+                           <span class="plus">m+</span>
+                        </h3>
+                        <p>Borrowed assets</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-funfacts-card">
+                     <div class="content">
+                        <div class="icon">
+                           <img src="/static/assets/img/data-science/funfacts/artificial-intelligence.svg" alt="image">
+                        </div>
+                        <h3>
+                           <span class="odometer" data-count="37">00</span>
+                           <span class="plus">k+</span>
+                        </h3>
+                        <p>Alphaoil Hedge Users</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Funfacts Area -->
+      <!-- Start Features Area -->
+      <div class="ds-features-area ptb-100">
+         <div class="container">
+            <div class="row align-items-center justify-content-center">
+               <div class="col-lg-7 col-md-12">
+                  <div class="ds-features-content">
+                     <span>Our Core features</span>
+                     <h3>Our focus on transparency</h3>
+                     <p>Transparency is foundational to our growth. Alphaoil Energy Capital operates with clear reporting, open communication, and strong governance. We believe investors deserve full visibility into how capital is allocated, managed, and protected.</p>
+                     <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-6">
+                           <ul class="list">
+                              <li><i class='bx bx-check-circle'></i> Asset-backed strategies
+                              </li>
+                              <li><i class='bx bx-check-circle'></i> Risk-controlled exposure
+                              </li>
+                              <li><i class='bx bx-check-circle'></i>Open reporting</li>
+                           </ul>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                           <ul class="list">
+                              <li><i class='bx bx-check-circle'></i> Responsible capital management</li>
+                              <!--<li><i class='bx bx-check-circle'></i> Non-Custodial Platform</li>-->
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="features-btn">
+                        <a href="{% url 'signin' %}" class="default-btn">Get started <i class='flaticon-chevron'></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-5 col-md-12">
+                  <div class="ds-features-image">
+                     <img src="/static/front_pages/nfincs_relationshipbanking.jpg" alt="image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="ds-features-shape">
+            <img src="/static/assets/img/data-science/dot-shape.png" alt="image">
+         </div>
+      </div>
+      <!-- End Features Area -->
+      <!-- Start Process Area -->
+      <div class="ds-process-area pb-75">
+         <div class="container">
+            <div class="ds-section-title">
+               <span>Our Investment Solutions</span>
+               <h2>Unlock the Full Potential of Your Assets</h2>
+               <p>Our infrastructure is designed to protect capital while optimizing performance across energy and real-asset investments.</p>
+            </div>
+            <div class="row justify-content-center align-items-center">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-process-card">
+                     <div class="number">01</div>
+                     <h3>Earn even on your first day</h3>
+                     <p>Competitive return targets aligned with market conditions</p>
+                     <div class="icon">
+                        <img src="/static/assets/img/data-science/process/icon1.svg" alt="image">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-process-card style-two">
+                     <h3>Easy to get started</h3>
+                     <p>Easy Minimal investment thresholds on select offerings</p>
+                     <div class="number">02</div>
+                     <div class="icon">
+                        <img src="/static/assets/img/data-science/process/icon2.svg" alt="image">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-process-card">
+                     <div class="number">03</div>
+                     <h3>Our Transparency</h3>
+                     <p>Structured income programs.</p>
+                     <div class="icon">
+                        <img src="/static/assets/img/data-science/process/icon3.svg" alt="image">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="ds-process-card style-two">
+                     <h3>Real-time performance tracking</h3>
+                     <p>You can see the process of your investment growth.</p>
+                     <div class="number">04</div>
+                     <div class="icon">
+                        <img src="/static/assets/img/data-science/process/icon4.svg" alt="image">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Process Area -->
+      <!-- Start Solutions Area -->
+      <div class="ds-solutions-area ptb-100">
+         <div class="container">
+            <div class="ds-section-title text-start">
+               <span>More Than an Energy Platform</span>
+               <h2>What We Offer Our Investors</h2>
+               <p>What we offer to Alphaoil Hedge Users. Our customer service and tech team are here always to assist you. We've got your back 24/7 and you can count on enterprise-class quality support and help whenever you need us.</p>
+            </div>
+            <div class="ds-solutions-list-tabs">
+               <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link active" id="data-analysis-tab" data-bs-toggle="tab" href="#data-analysis" role="tab" aria-controls="data-analysis"><img src="/static/images/3.svg" alt="image" width = "40">Oil & Gas Projects</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" id="data-analysis-tab" data-bs-toggle="tab" href="#data-analysis" role="tab" aria-controls="data-analysis"><img src="/static/images/3.svg" alt="image" width = "40">Energy Infrastructure</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" id="data-analysis-tab" data-bs-toggle="tab" href="#data-analysis" role="tab" aria-controls="data-analysis"><img src="/static/images/3.svg" alt="image" width = "40">Real Estate</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" id="data-analysis-tab" data-bs-toggle="tab" href="#data-analysis" role="tab" aria-controls="data-analysis"><img src="/static/images/3.svg" alt="image" width = "40"> Retirement & Income Planning</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="data-modules-tab" data-bs-toggle="tab" href="#data-modules" role="tab" aria-controls="data-modules"><img src="/static/images/2.svg" alt="image" width = "40">Commodities & Forex Exposure</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="social-assistant-tab" data-bs-toggle="tab" href="#social-assistant" role="tab" aria-controls="social-assistant"><img src="/static/images/4.svg" alt="image" width = "40">Risk Management</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" id="ai-solutions-tab" data-bs-toggle="tab" href="#ai-solutions" role="tab" aria-controls="ai-solutions"><img src="/static/images/1.svg" alt="image" width = "40"> Portfolio Management</a>
+                  </li>
+               </ul>
+               <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="data-analysis" role="tabpanel">
+                     <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-5 col-md-12">
+                           <div class="ds-solutions-image">
+                              <img src="/static/pipe_line.jpg" alt="image" style = "width:100%;height:300px;object-fit: cover;">
+                           </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                           <div class="ds-solutions-content">
+                              <h3>Asset-Backed Financing</h3>
+                              <p>Preserve ownership of your assets while accessing liquidity. Our financing solutions are designed to support operational needs, portfolio optimization, and cash flow management—without forcing asset liquidation.
+
+                                We apply bank-grade risk assessment models and maintain a robust control framework to mitigate market and operational risks.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="data-modules" role="tabpanel">
+                     <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-5 col-md-12">
+                           <div class="ds-solutions-image">
+                              <img src="/static/images/exchange.jpg" alt="image" style = "width:100%;height:300px;object-fit: cover;">
+                           </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                           <div class="ds-solutions-content">
+                              <h3>Insights & Market Commentary</h3>
+                              <p>Stay informed with expert perspectives on energy markets, commodities, and global investment trends through our research and publications.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="social-assistant" role="tabpanel">
+                     <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-5 col-md-12">
+                           <div class="ds-solutions-image">
+                              <img src="/static/images/staked.jpg" alt="image" style = "width:100%;height:300px;object-fit: cover;">
+                           </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12">
+                           <div class="ds-solutions-content">
+                              <h3>Important Risk Disclosure</h3>
+                              <p>Investments in oil, gas, commodities, and alternative assets involve risk. Asset values and returns may fluctuate, and investors may lose part or all of their invested capital. Past performance is not a guarantee of future results.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="ds-solutions-shape">
+            <img src="/static/assets/img/data-science/dot-shape.png" alt="image">
+         </div>
+      </div>
+      <!-- End Solutions Area -->
+      <!-- Start Feedback Area -->
+      <div class="ds-feedback-area pt-100">
+         <div class="container">
+            <div class="ds-section-title text-start">
+               <h2>What our clients have to say</h2>
+               <p>Check Our Users Feedbacks On Our Services</p>
+            </div>
+            <div class="ds-feedback-slides owl-carousel owl-theme">
+               <div class="ds-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/greenwich.png" alt="image">
+                     <div class="title">
+                        <h3>Alphaoil Hedge User</h3>
+                        <span>From USA</span>
+                     </div>
+                  </div>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>“KYC/AML procedures aren't stressful and i got everything up and running in no time.”</p>
+                  <br/>
+                  <p>Date: 19 Aug 2024</p>
+               </div>
+               <div class="ds-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/greenwich.png" alt="image">
+                     <div class="title">
+                        <h3>Alphaoil Hedge User</h3>
+                        <span>From Singapore</span>
+                     </div>
+                  </div>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>“ Ease of deposits and withdrawls after verification. I wouldn't have it any other way.”</p>
+                  <br/>
+                  <p>Date: 12 Mar 2025</p>
+               </div>
+               <div class="ds-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/greenwich.png" alt="image">
+                     <div class="title">
+                        <h3>Alphaoil Hedge User</h3>
+                        <span>From Germany</span>
+                     </div>
+                  </div>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>“I have engaged in several packages and they were good projects to engage. Thumbs up!”</p>
+                  <br/>
+                  <p>Date: 5 Jun 2024</p>
+               </div>
+               <div class="ds-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/greenwich.png" alt="image">
+                     <div class="title">
+                        <h3>Alphaoil Hedge User</h3>
+                        <span>From UK</span>
+                     </div>
+                  </div>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>“I wish there were bigger packages and target profits.”</p>
+                  <br/>
+                  <p>Date: 21 Feb 2023</p>
+               </div>
+               <div class="ds-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/greenwich.png" alt="image">
+                     <div class="title">
+                        <h3>Alphaoil Hedge User</h3>
+                        <span>From India</span>
+                     </div>
+                  </div>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>“ investing & withdrawing  has been smooth as far as i can tell.”</p>
+                  <br/>
+                  <p>Date: 18 Jul 2023</p>
+               </div>
+               <div class="ds-feedback-card">
+                  <div class="info">
+                     <img src="/static/images/greenwich.png" alt="image">
+                     <div class="title">
+                        <h3>Alphaoil Hedge User</h3>
+                        <span>From Mexico</span>
+                     </div>
+                  </div>
+                  <ul class="rating">
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                     <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>“Their refund process was swift after i encountered some support issues.”</p>
+                  <br/>
+                  <p>Date: 9 Jan 2026</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Feedback Area -->
+      <!-- Start Blog Area -->
+      <div class="ds-blog-area pt-100 pb-75">
+         <div class="container">
+            <div class="ds-section-title">
+               <span>Our Blog</span>
+               <h2>Read our latest posts</h2>
+               <p>Read the latest news and important updates from Alphaoil Hedge.</p>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-lg-4 col-md-6">
+                  <div class="ds-blog-card">
+                     <div class="blog-image">
+                        <a href=""><img src="/static/ship.png" alt="image"></a>
+                        <div class="date">
+                           <span>21st September 2024</span>
+                        </div>
+                     </div>
+                     <div class="blog-content">
+                        <ul class="meta">
+                           <li><i class='bx bx-user'></i> By <a href="#">admin</a></li>
+                           <li>/</li>
+                        </ul>
+                        <h3>
+                           <a href="">The Role of Offshore Production in Meeting Future Energy Demand</a>
+                        </h3>
+                        <a href="https://www.commodity3.com/content/41/energy-news" class="blog-btn">Read more</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="ds-blog-card">
+                     <div class="blog-image">
+                        <a href=""><img src="/static/front_pages/rig_up_close.jpg" alt="image"></a>
+                        <div class="date">
+                           <span>18th September 2025</span>
+                        </div>
+                     </div>
+                     <div class="blog-content">
+                        <ul class="meta">
+                           <li><i class='bx bx-user'></i> By <a href="https://www.commodity3.com/content/41/energy-news">admin</a></li>
+                           <li>/</li>
+                        </ul>
+                        <h3>
+                           <a href="">Why Oil and Gas Remain Critical to Global Energy Security</a>
+                        </h3>
+                        <a href="https://www.worldoil.com/home.aspx" class="blog-btn">Read more</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Blog Area -->
+      <!-- Start Subscribe Area -->
+      <section class="subscribe-area ptb-100">
+         <div class="container">
+            <div class="subscribe-content">
+               <span class="sub-title">Latest Market News & Updates</span>
+               <h2>Subscribe To Our Newsletter</h2>
+               <p>Subscribe to Alphaoil Hedge Newsletters — the best way to stay informed about how Ai95, crude oil and petroleum products are transforming the global financial systems.</p>
+               <form action="" class="newsletter-form" data-bs-toggle="validator" method="post" AlphaOilAept-charset="utf-8">
+                  <input type="text" class="input-newsletter" placeholder="Enter your email address" name="EMAIL" required autocomplete="off" required>
+                  <button type="submit" class="default-btn">Subscribe Now</button>
+                  <div id="validator-newsletter" class="form-result"></div>
+               </form>
+            </div>
+         </div>
+         <div class="shape9"><img src="/static/assets/img/shape/shape9.png" alt="image"></div>
+         <div class="shape10"><img src="/static/assets/img/shape/shape10.png" alt="image"></div>
+         <div class="shape11"><img src="/static/assets/img/shape/shape11.png" alt="image"></div>
+         <div class="shape12"><img src="/static/assets/img/shape/shape12.png" alt="image"></div>
+      </section>
+      <!-- End Subscribe Area -->
+      <!-- Start Footer Area -->
+      <footer class="footer-area ds-footer-area">
+         <div class="container">
+            <div class="row">
+               <div class = "col-lg-6" style = "color:white;">
+                Alphaoil Energy Capital is a multi-faceted energy investment and asset management platform providing access to oil, gas, real assets, and structured financial solutions. We enable investors to move beyond speculation toward disciplined, asset-backed strategies.
+               </div>
+               <div class = "col-lg-6" style = "color:white;">
+                We operate under strict governance standards and respect investor privacy. Assets remain under defined ownership structures, and we do not exercise discretionary control without authorization.
+                  <br/><br/>
+               </div>
+               <br/>
+               <hr style = "color:white;"/>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget">
+                     <a href="{% url 'home' %}" class="logo">
+                        <img src="/static/front_pages/lionhead.png" style="height: 80px; width: 80px;">
+                     </a>
+                     <p>Alphaoil Hedge is a non-custodial digital service, which means you own the keys. We respect your privacy. We never have access to, or knowledge of, your digital assets — only you do. </p>
+                     <ul class="social-link">
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-youtube"></i></a></li>
+                        <li><a href="" class="d-block" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Quick Links</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'signin' %}">Login To AlphaOil</a></li>
+                        <li><a href="{% url 'signup' %}">Create an AlphaOil account</a></li>
+                        <li><a href="{% url 'reset_password' %}">Reset Password</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Resources</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'plan' %}">Plans</a></li>
+                        <li><a href="{% url 'contact' %}">Jobs & Careers</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Company</h3>
+                     <ul class="footer-links-list">
+                        <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+                        <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="">Our Brochure is being prepared for 2024</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                  <div class="single-footer-widget ps-5">
+                     <h3>Contact</h3>
+                     <ul class="footer-contact-info">
+                        <!-- <li>
+                           <i class="bx bx-map"></i>
+                           <span>Location:</span>
+                           2976 sunrise road las vegas
+                           </li>-->
+                        <li>
+                           <i class="bx bx-envelope"></i>
+                           <span>Email:</span>
+                           <a href="mailto:support@Alphaoilhedge.com"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d7dad1dac99dd0dcde">support@Alphaoilhedge.com</span></a>
+                        </li>
+                        <li>
+                           <i class="bx bxs-phone"></i>
+                           <span>Phone: +Encrypted</span>
+                           <a href="tell:+Encrypted">+Encrypted</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom-area">
+            <p>All rights reserved. Alphaoilhedge.com </p>
+         </div>
+      </footer>
+      <!-- End Footer Area -->
+      <div class="go-top"><i class="bx bx-up-arrow-alt"></i></div>
+      <a class= "open-button">
+         <div id="google_translate_element"></div>
+         <script data-cfasync="false" src="/static/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, "google_translate_element");
+                    }
+         </script>
+         <script type="text/javascript" src="/static/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+      </a>
+      <style>
+         div.static {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         z-index: 2000;
+         }
+         .open-button {
+         padding: 13px 17px;
+         border-radius: 30px;
+         cursor: pointer;
+         opacity: 0.8;
+         position: fixed;
+         bottom: 80px;
+         margin-right: 70px;
+         width: 200px;
+         z-index: 1500;
+         background-color:#064E3B;
+         }
+      </style>
+      <div class = "static">
+         <!-- TradingView Widget BEGIN -->
+         <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="/static/s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+               {
+               "symbols": [
+                 {
+                   "proName": "BITSTAMP:BTCUSD",
+                   "title": "BTC/USD"
+                 },
+                 {
+                   "proName": "BITSTAMP:ETHUSD",
+                   "title": "ETH/USD"
+                 },
+                 {
+                   "description": "DOGE",
+                   "proName": "BITFINEX:DOGEUSD"
+                 },
+                 {
+                   "description": "USDT",
+                   "proName": "KRAKEN:USDTUSD"
+                 },
+                 {
+                   "description": "BNB",
+                   "proName": "BINANCE:BNBUSD"
+                 },
+
+                 {
+                   "description": "XRP",
+                   "proName": "BITFINEX:XRPUSD"
+                 },
+                 {
+                   "description": "UNISWAP",
+                   "proName": "BITTREX:UNIUSD"
+                 },
+                 {
+                   "description": "XLM",
+                   "proName": "KRAKEN:XLMUSD"
+                 },
+                 {
+                   "description": "THETA",
+                   "proName": "KUCOIN:THETAUSDT"
+                 },
+                 {
+                   "description": "XMR",
+                   "proName": "BITFINEX:XMRUSD"
+                 },
+                 {
+                   "description": "ALGO",
+                   "proName": "KRAKEN:ALGOUSD"
+                 },
+                 {
+                   "description": "AlphaOilVE",
+                   "proName": "BINANCE:AlphaOilVEBTC"
+                 },
+                 {
+                   "description": "TEZOS",
+                   "proName": "BINANCE:XTZBTC"
+                 },
+                 {
+                   "description": "DASH",
+                   "proName": "KRAKEN:DASHUSD"
+                 },
+                 {
+                   "description": "ZCASH",
+                   "proName": "BITFINEX:ZECUSD"
+                 },
+                 {
+                   "description": "YFI",
+                   "proName": "BITKUB:YFITHB"
+                 },
+                 {
+                   "description": "ADA",
+                   "proName": "BINANCE:ADABTC"
+                 }
+               ],
+               "showSymbolLogo": true,
+               "colorTheme": "dark",
+               "isTransparent": false,
+               "displayMode": "adaptive",
+               "locale": "en"
+               }
+            </script>
+         </div>
+         <!-- TradingView Widget END -->
+      </div>
+      <!-- Links of JS files -->
+      <script src="/static/assets/js/jquery.min.js"></script>
+      <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/assets/js/appear.min.js"></script>
+      <script src="/static/assets/js/odometer.min.js"></script>
+      <script src="/static/assets/js/magnific-popup.min.js"></script>
+      <script src="/static/assets/js/fancybox.min.js"></script>
+      <script src="/static/assets/js/owl.carousel.min.js"></script>
+      <script src="/static/assets/js/meanmenu.min.js"></script>
+      <script src="/static/assets/js/nice-select.min.js"></script>
+      <script src="/static/assets/js/sticky-sidebar.min.js"></script>
+      <script src="/static/assets/js/wow.min.js"></script>
+      <script src="/static/assets/js/form-validator.min.js"></script>
+      <script src="/static/assets/js/contact-form-script.js"></script>
+      <script src="/static/assets/js/ajaxchimp.min.js"></script>
+      <script src="/static/assets/js/main.js"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+   </body>
+   <!-- Mirrored from Alphaoilhedge.com/home by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:01:14 GMT -->
+</html>

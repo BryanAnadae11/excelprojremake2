@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="x-apple-disable-message-reformatting">
+      <title>Welcome to AlphaOilHedge</title>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+         :root{
+         --primary:#0C231F;
+         --primary-light:#12342E;
+         }
+         *{margin:0;padding:0;box-sizing:border-box;}
+         body{
+         font-family:'Poppins',sans-serif;
+         background:#081916;
+         }
+         table{border-spacing:0;border-collapse:collapse;}
+         td{padding:0;}
+         img{border:0;display:block;max-width:100%;}
+         .wrapper{
+         width:100%;
+         background:linear-gradient(180deg,#081916 0%,#0C231F 100%);
+         padding:60px 20px;
+         }
+         .main{
+         background:#ffffff;
+         max-width:650px;
+         margin:0 auto;
+         border-radius:24px;
+         overflow:hidden;
+         box-shadow:0 30px 90px rgba(0,0,0,.5);
+         }
+         /* HEADER */
+         .header{
+         background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);
+         padding:60px 50px;
+         position:relative;
+         text-align:center;
+         }
+         .logo-placeholder{
+         background:#ffffff;
+         padding:20px 40px;
+         border-radius:16px;
+         margin-bottom:30px;
+         display:inline-block;
+         }
+         .hero-title{
+         color:#ffffff;
+         font-size:42px;
+         font-weight:800;
+         }
+         .hero-subtitle{
+         color:#e2e8f0;
+         font-size:18px;
+         }
+         /* CONTENT */
+         .content{
+         padding:60px 50px;
+         }
+         .greeting{
+         font-size:24px;
+         font-weight:700;
+         margin-bottom:28px;
+         color:#0f172a;
+         }
+         .text-block{
+         font-size:17px;
+         line-height:1.8;
+         color:#475569;
+         margin-bottom:24px;
+         }
+         .cta-container{text-align:center;margin:50px 0;}
+         .cta-button{
+         background:linear-gradient(135deg,var(--primary),var(--primary-light));
+         color:#ffffff!important;
+         text-decoration:none;
+         padding:20px 50px;
+         border-radius:60px;
+         font-size:18px;
+         font-weight:700;
+         box-shadow:0 10px 40px rgba(12,35,31,.45);
+         }
+         .divider{
+         height:1px;
+         background:#e2e8f0;
+         margin:60px 0;
+         }
+         /* PLANS */
+         .plans-section{
+         background:#f8fafc;
+         padding:70px 50px;
+         }
+         .section-label{
+         background:var(--primary);
+         color:#ffffff;
+         font-size:13px;
+         font-weight:700;
+         padding:8px 20px;
+         border-radius:20px;
+         display:inline-block;
+         }
+         .section-title{
+         font-size:38px;
+         font-weight:800;
+         margin:16px 0;
+         }
+         .section-subtitle{
+         font-size:18px;
+         color:#64748b;
+         }
+         .plan-card{
+         background:#ffffff;
+         border-radius:20px;
+         padding:40px;
+         margin-bottom:24px;
+         border:2px solid #f1f5f9;
+         }
+         .plan-card::before{
+         content:'';
+         display:block;
+         height:6px;
+         background:linear-gradient(90deg,var(--primary),var(--primary-light));
+         margin:-40px -40px 30px;
+         }
+         .plan-header{
+         display:flex;
+         align-items:center;
+         margin-bottom:24px;
+         }
+         .plan-icon{
+         width:64px;
+         height:64px;
+         background:linear-gradient(135deg,var(--primary),var(--primary-light));
+         border-radius:16px;
+         display:flex;
+         align-items:center;
+         justify-content:center;
+         margin-right:20px;
+         font-size:28px;
+         color:#fff;
+         }
+         .plan-feature{
+         background:#f8fafc;
+         padding:16px 20px;
+         border-radius:12px;
+         margin-bottom:12px;
+         border-left:4px solid var(--primary);
+         }
+         .plan-cta{
+         display:inline-block;
+         background:linear-gradient(135deg,var(--primary),var(--primary-light));
+         color:#ffffff!important;
+         padding:16px 36px;
+         border-radius:50px;
+         text-decoration:none;
+         font-weight:700;
+         }
+         /* SECURITY */
+         .security-section{
+         background:linear-gradient(135deg,#081916,#0C231F);
+         padding:70px 50px;
+         }
+         .security-title{
+         color:#ffffff;
+         font-size:32px;
+         font-weight:800;
+         }
+         .security-subtitle{
+         color:#94a3b8;
+         }
+         .security-item{
+         background:rgba(255,255,255,.06);
+         border:1px solid rgba(255,255,255,.1);
+         padding:24px;
+         border-radius:16px;
+         margin-bottom:16px;
+         }
+         .security-item-title{color:#ffffff;font-weight:700;}
+         .security-item-text{color:#cbd5e1;font-size:15px;}
+         /* FOOTER */
+         .footer{
+         background:#081916;
+         padding:60px 50px;
+         text-align:center;
+         }
+         .footer-logo-text{
+         font-size:24px;
+         font-weight:800;
+         color:#ffffff;
+         }
+         .footer-text{
+         color:#94a3b8;
+         font-size:14px;
+         max-width:500px;
+         margin:30px auto;
+         }
+         .footer-link{
+         color:var(--primary-light)!important;
+         text-decoration:none;
+         margin:0 16px;
+         font-weight:600;
+         }
+         .footer-copyright{
+         color:#64748b;
+         font-size:13px;
+         margin-top:30px;
+         }
+         @media(max-width:600px){
+         .header,.content,.plans-section,.security-section,.footer{padding:40px 30px;}
+         .hero-title{font-size:32px;}
+         }
+      </style>
+   </head>
+   <body>
+      <center class="wrapper">
+         <table class="main">
+            <tr>
+               <td class="header">
+                  <div class="logo-placeholder">
+                     <img src="{% static 'lionhead.png' %}" style="height:80px;width:100px;">
+                  </div>
+                  <h1 class="hero-title">Welcome Aboard</h1>
+                  <p class="hero-subtitle">Your journey to financial freedom starts here</p>
+               </td>
+            </tr>
+            <!-- Main Content -->
+            <tr>
+               <td class="content">
+                  <h2 class="greeting">Hello {{name}},</h2>
+                    <p class="text-block">
+                      Welcome to <strong>Alpha Oil</strong> — a trusted energy company delivering reliable oil and gas solutions across global markets. We’re pleased to welcome you as part of our growing network of partners and stakeholders.
+                    </p>
+                    <p class="text-block">
+                      With operations spanning upstream, midstream, and downstream activities, Alpha Oil provides expertise in energy production, infrastructure development, and asset management. Our focus on safety, efficiency, and transparency ensures long-term value across every project we undertake.
+                    </p>
+                    <p class="text-block">
+                      To get started, we invite you to complete your onboarding and access detailed information about our operations, projects, and partnership opportunities as we work together to power sustainable growth.
+                    </p>
+                  <div class="cta-container"> <a href="https://www.AlphaOilHedge.com/signin/" class="cta-button">Access Your Dashboard</a> </div>
+                  <div class="divider"></div>
+                  <p class="text-block" style="text-align: center; color: #64748b; font-size: 15px;"> <strong>Support Team</strong><br> support@AlphaOilHedge.com </p>
+               </td>
+            </tr>
+            <!-- Plans Section -->
+
+
+            <!--
+            <tr>
+               <td class="plans-section">
+                  <div class="section-header">
+                     <div class="section-label">Investment Options</div>
+                     <h2 class="section-title">Choose Your Path</h2>
+                     <p class="section-subtitle">Tailored investment plans designed to match your financial goals and timeline</p>
+                  </div>
+                  <div class="plan-grid">
+                     <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                           <td class="plan-card">
+                              <div class="plan-header">
+                                 <div class="plan-icon">🏆</div>
+                                 <h3 class="plan-title">Prospector Plan</h3>
+                              </div>
+                              <p class="plan-description">Ideal for new investors exploring oil & gas opportunities..</p>
+                              <div class="plan-features">
+                                 <div class="plan-feature"> <strong>Duration:</strong> 1 month</div>
+                                 <div class="plan-feature"> <strong>Target Profit:</strong> $100,000 </div>
+                                 <div class="plan-feature"> <strong>Minimum Deposit:</strong>$1,000</div>
+                                 <div class="plan-feature"> <strong>Maximum Deposit:</strong>$30,000</div>
+                                 <div class="plan-feature"> Investors contribute 30% of the target profit they want to share</div>
+                              </div>
+                              <a href="https://www.AlphaOilHedge.com/signin/" class="plan-cta">Get Started - $1,000</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                           <td class="plan-card">
+                              <div class="plan-header">
+                                 <div class="plan-icon">⚡</div>
+                                   <h3 class="plan-title">Upstream Package</h3>
+                              </div>
+                              <p class="plan-description">Perfect for serious investors who want deeper insights, structured guidance, and early access to projects.</p>
+                              <div class="plan-features">
+                                 <div class="plan-feature"> <strong>Duration:</strong> 2 month</div>
+                                 <div class="plan-feature"> <strong>Target Profit:</strong> $200,000 </div>
+                                 <div class="plan-feature"> <strong>Minimum Deposit:</strong>$5,000</div>
+                                 <div class="plan-feature"> <strong>Maximum Deposit:</strong>$60,000</div>
+                                 <div class="plan-feature">Investors contribute 30% of target profit they want to achieve</div>
+                              </div>
+                              <a href="https://www.AlphaOilHedge.com/signin/" class="plan-cta">Get Started - $5,000</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                           <td class="plan-card">
+                              <div class="plan-header">
+                                 <div class="plan-icon">📊</div>
+                                   <h3 class="plan-title">Petrol-Max Package</h3>
+                              </div>
+                              <p class="plan-description">Built for institutional investors and high-net-worth individuals seeking premium access and comprehensive due diligence resources.</p>
+                              <div class="plan-features">
+                                 <div class="plan-feature"> <strong>Duration:</strong> 3 months</div>
+                                 <div class="plan-feature"> <strong>Target Profit:</strong> $300,000 </div>
+                                 <div class="plan-feature"> <strong>Minimum Deposit:</strong>$20,000</div>
+                                 <div class="plan-feature"> <strong>Maximum Deposit:</strong>$90,000</div>
+                                 <div class="plan-feature"> Investors contribute 30% of the target profit they want to share</div>
+                              </div>
+                              <a href="https://www.AlphaOilHedge.com/signin/" class="plan-cta">Get Started - $20,000</a>
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </td>
+            </tr> -->
+
+
+
+            <!-- Security Section -->
+            <tr>
+               <td class="security-section">
+                  <div class="security-header">
+                     <div class="security-icon">🔐</div>
+                     <h2 class="security-title">Your Security Matters</h2>
+                     <p class="security-subtitle">Essential tips to keep your account protected</p>
+                  </div>
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                     <tr>
+                        <td class="security-grid">
+                           <div class="security-item">
+                              <div class="security-item-title">🔒 Create a Strong Password</div>
+                              <p class="security-item-text">Use a combination of uppercase and lowercase letters, numbers, and special characters to maximize security.</p>
+                           </div>
+                           <div class="security-item">
+                              <div class="security-item-title">🤐 Keep Credentials Private</div>
+                              <p class="security-item-text">Never share your login details with anyone or save them on untrusted devices. Your account security is paramount.</p>
+                           </div>
+                           <div class="security-item">
+                              <div class="security-item-title">📶 Use Secure Connections</div>
+                              <p class="security-item-text">Avoid accessing your account through public Wi-Fi networks. Always use a private, secure internet connection.</p>
+                           </div>
+                           <div class="security-item">
+                              <div class="security-item-title">✅ Verify the URL</div>
+                              <p class="security-item-text">Always ensure you're visiting www.AlphaOilHedge.com. Be cautious of phishing sites with similar-looking domains.</p>
+                           </div>
+                           <div class="security-item">
+                              <div class="security-item-title">⚠️ Report Suspicious Activity</div>
+                              <p class="security-item-text">If you notice any unauthorized activities in your account, immediately contact our customer care unit.</p>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+               <td class="footer">
+                  <div class="footer-logo">
+                     <div class="footer-logo-text">AlphaOilHedge</div>
+                  </div>
+                  <p class="footer-text"> <strong style="color: #ffffff;">Important Notice:</strong> AlphaOilHedge will never ask for your login credentials, credit card details, or cryptocurrency recovery phrases. We will never call, chat, or send SMS messages. Ignore any imposters claiming to be our agents. For accounts under $1M, we don't charge transaction fees or commissions. </p>
+                  <div class="footer-links"> <a href="https://www.AlphaOilHedge.com/about/" class="footer-link">About Us</a> <a href="https://www.AlphaOilHedge.com/about/" class="footer-link">Contact Support</a> <a href="#" class="footer-link">Unsubscribe</a> <a href="https://www.AlphaOilHedge.com/" class="footer-link">View in Browser</a> </div>
+                  <p class="footer-copyright"> © 2020-2025 AlphaOilHedge. All rights reserved. </p>
+               </td>
+            </tr>
+         </table>
+      </center>
+   </body>
+</html>

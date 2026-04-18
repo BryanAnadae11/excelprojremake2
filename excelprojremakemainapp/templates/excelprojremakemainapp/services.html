@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="profile" href="https://gmpg.org/xfn/11">
+      <style>
+         .ui-link-helper svg {
+         width: 22px;
+         }
+         .ui-link-helper {
+         position: fixed;
+         right: 0;
+         top: calc(50vh - 111px);
+         display: flex;
+         flex-direction: column;
+         background: white;
+         width: 45px;
+         cursor: pointer;
+         border-left: 0;
+         border-radius: 0;
+         -webkit-box-shadow: 0 5px 40px rgb(0 0 0 / 7%);
+         -moz-box-shadow: 0 5px 40px rgba(0,0,0,7%);
+         box-shadow: 0 5px 40px rgb(0 0 0 / 7%);
+         padding: 0;
+         border-top-left-radius: 5px;
+         border-bottom-left-radius: 5px;
+         border: 1px solid #eaeaea;
+         border-right: 0;
+         z-index: 9999999;
+         }
+         .ui-link-helper .ui-tooltip {
+         opacity: 0;
+         visibility: hidden;
+         -webkit-transform: scale(.7);
+         -moz-transform: scale(.7);
+         -ms-transform: scale(.7);
+         transform: scale(.7);
+         position: absolute;
+         background-color: #fff;
+         font-size: 13px;
+         margin: 0;
+         padding: 0px 20px;
+         font-family: inherit;
+         width: auto;
+         font-weight: 500;
+         line-height: 36px;
+         letter-spacing: .1px;
+         right: 10px;
+         top: 4px;
+         border-radius:3px;
+         white-space: nowrap;
+         -webkit-box-shadow: 0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+         -moz-box-shadow:0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+         box-shadow: 0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+         -moz-transition: all .3s cubic-bezier(0.64,-0.09, 0.13, 1.15);
+         -o-transition: all .3s cubic-bezier(0.64,-0.09, 0.13, 1.15);
+         transition: all .3s cubic-bezier(0.64,-0.09, 0.13, 1.15);
+         color:#F5A9A5;
+         }
+         .ui-link-helper .ui-tooltip-link:hover .ui-tooltip {
+         opacity: 1;
+         right: 60px;
+         visibility: visible;
+         -webkit-transform: scale(1);
+         -moz-transform: scale(1);
+         -ms-transform: scale(1);
+         transform: scale(1);
+         }
+         .ui-link-helper .ui-tooltip-link {
+         position: relative;
+         display: flex;
+         justify-content: center;
+         height: 44px;
+         align-items: center;
+         transition: all .3s ease-in;
+         }
+         .ui-link-helper .ui-tooltip span{
+         display: block;
+         position: absolute;
+         right: -5px;
+         top: 12px;
+         width: 0;
+         height: 0;
+         border-left: 5px solid #fff;
+         border-bottom: 5px solid transparent;
+         border-top: 5px solid transparent;
+         }
+         .ui-link-helper .ui-tooltip-link + .ui-tooltip-link {
+         border-top: 1px solid #eaeaea;
+         }
+         .ui-link-helper .ui-tooltip-link svg {
+         height: 20px;
+         }
+         .ui-tooltip-link:hover {
+         background: rgb(83 45 245 / 5%);
+         }
+         .ui-tooltip-link:hover svg path {
+         fill: #F5A9A5;
+         }
+         @media(max-width: 767px) {
+         .ui-link-helper {
+         display: none;
+         }
+         }
+      </style>
+      <title>Services &#8211; Pages</title>
+      <meta name='robots' content='max-image-preview:large' />
+      <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+      <link rel="alternate" type="application/rss+xml" title="Pages &raquo; Feed" href="" />
+      <link rel="alternate" type="application/rss+xml" title="Pages &raquo; Comments Feed" href="" />
+      <script>
+         window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/finflow.uicore.co\/pages\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+         /*! This file is auto-generated */
+         !function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+      </script>
+      <style id='wp-emoji-styles-inline-css'>
+         img.wp-smiley, img.emoji {
+         display: inline !important;
+         border: none !important;
+         box-shadow: none !important;
+         height: 1em !important;
+         width: 1em !important;
+         margin: 0 0.07em !important;
+         vertical-align: -0.1em !important;
+         background: none !important;
+         padding: 0 !important;
+         }
+      </style>
+      <style id='classic-theme-styles-inline-css'>
+         /*! This file is auto-generated */
+         .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+      </style>
+      <link rel='stylesheet' id='cute-alert-css' href='https://finflow.uicore.co/pages/wp-content/plugins/metform/public/assets/lib/cute-alert/style.css?ver=4.0.6' media='all' />
+      <link rel='stylesheet' id='text-editor-style-css' href='https://finflow.uicore.co/pages/wp-content/plugins/metform/public/assets/css/text-editor.css?ver=4.0.6' media='all' />
+      <link rel='stylesheet' id='elementor-icons-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.44.0' media='all' />
+      <link rel='stylesheet' id='elementor-frontend-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.32.3' media='all' />
+      <link rel='stylesheet' id='widget-heading-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.3' media='all' />
+      <link rel='stylesheet' id='widget-image-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.32.3' media='all' />
+      <link rel='stylesheet' id='bdt-uikit-css' href='https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/css/bdt-uikit.css?ver=3.21.7' media='all' />
+      <link rel='stylesheet' id='ep-helper-css' href='https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/css/ep-helper.css?ver=8.4.1' media='all' />
+      <link rel='stylesheet' id='ep-advanced-icon-box-css' href='https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/css/ep-advanced-icon-box.css?ver=8.4.1' media='all' />
+      <link rel='stylesheet' id='widget-spacer-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.32.3' media='all' />
+      <link rel='stylesheet' id='ep-font-css' href='https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/css/ep-font.css?ver=8.4.1' media='all' />
+      <link rel='stylesheet' id='ep-mailchimp-css' href='https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/css/ep-mailchimp.css?ver=8.4.1' media='all' />
+      <link rel='stylesheet' id='elementor-post-79-css' href='https://finflow.uicore.co/pages/wp-content/uploads/sites/14/elementor/css/post-79.css?ver=1757497182' media='all' />
+      <link rel='stylesheet' id='uicore_global-css' href='https://finflow.uicore.co/pages/wp-content/uploads/sites/14/uicore-global.css?ver=2705' media='all' />
+      <link rel='stylesheet' id='elementor-gf-local-inter-css' href='https://finflow.uicore.co/pages/wp-content/uploads/sites/14/elementor/google-fonts/css/inter.css?ver=1744932683' media='all' />
+      <link rel='stylesheet' id='elementor-icons-shared-1-css' href='https://finflow.uicore.co/pages/wp-content/plugins/uicore-framework/assets/fonts/themify/themify-icons.css?ver=1.0.0' media='all' />
+      <link rel='stylesheet' id='elementor-icons-uicore-icons-css' href='https://finflow.uicore.co/pages/wp-content/plugins/uicore-framework/assets/fonts/themify/themify-icons.css?ver=1.0.0' media='all' />
+      <link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+      <link rel='stylesheet' id='elementor-icons-fa-regular-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' media='all' />
+      <script src="https://finflow.uicore.co/pages/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+      <link rel="https://api.w.org/" href="https://finflow.uicore.co/pages/wp-json/" />
+      <link rel="alternate" title="JSON" type="application/json" href="https://finflow.uicore.co/pages/wp-json/wp/v2/pages/79" />
+      <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://finflow.uicore.co/pages/xmlrpc.php?rsd" />
+      <meta name="generator" content="WordPress 6.8.3" />
+      <link rel="canonical" href="https://finflow.uicore.co/pages/services/" />
+      <link rel='shortlink' href='https://finflow.uicore.co/pages/?p=79' />
+      <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://finflow.uicore.co/pages/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffinflow.uicore.co%2Fpages%2Fservices%2F" />
+      <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://finflow.uicore.co/pages/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffinflow.uicore.co%2Fpages%2Fservices%2F&#038;format=xml" />
+      <meta name="generator" content="Elementor 3.32.3; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+      <meta name="theme-color" content="#4ECCAA" />
+      <link rel="shortcut icon" href="/static/lionhead.png" >
+      <link rel="icon" href="/static/lionhead.png" >
+      <link rel="apple-touch-icon" sizes="152x152" href="/static/lionhead.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/static/lionhead.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/static/lionhead.png">
+      <link rel="apple-touch-icon" href="/static/lionhead.png">
+      <script src="https://kit.fontawesome.com/a5eeb41a90.js" crossorigin="anonymous"></script>
+      <style>
+         .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+         .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+         background-image: none !important;
+         }
+         @media screen and (max-height: 1024px) {
+         .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+         .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+         background-image: none !important;
+         }
+         }
+         @media screen and (max-height: 640px) {
+         .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+         .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+         background-image: none !important;
+         }
+         }
+      </style>
+   </head>
+   <body class="wp-singular page-template-default page page-id-79 wp-embed-responsive wp-theme-uicore-pro uicore-animate-fade ui-a-dsmm-slide  elementor-default elementor-kit-4 elementor-page elementor-page-79">
+      <div class="uicore-animation-bg"></div>
+      <!-- Custom HTML - Page Options --><!-- 1.1 uicore_before_body_content -->	
+      <div class="uicore-body-content">
+         <!-- 1.2 uicore_before_page_content -->		
+         <div id="uicore-page">
+            <div data-uils="header" data-uils-title="Header" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="uicore uicore-navbar uicore-section uicore-h-classic uicore-sticky ui-smart-sticky ">
+               <div class="uicore-header-wrapper">
+                  <nav class="uicore uicore-container">
+                     <div class="uicore-branding "
+                        data-uils="header-branding"
+                        data-uils-title="Site Logo"
+                        >
+                        <a href="{% url 'home' %}" rel="home">
+                        <img class="uicore uicore-logo uicore-main" src="/static/lionhead.png" alt="Pages" width="341" height="64"/>
+                        <img class="uicore uicore-logo uicore-second" src="/static/lionhead.png" alt="Pages" width="341" height="64"/>
+                        <img class="uicore uicore-logo uicore-mobile-main" src="/static/lionhead.png" alt="Pages" width="341" height="64"/>
+                        <img loading="lazy" class="uicore uicore-logo uicore-mobile-second" src="/static/lionhead.png" alt="Pages" width="341" height="64"/>
+                        </a>
+                     </div>
+                     <div class='uicore-nav-menu'>
+                        <div class="uicore-menu-container uicore-nav">
+                           <ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu">
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-273">
+                                 <a href="{% url 'about' %}"><span class="ui-menu-item-wrapper">About Us</span></a>
+                              </li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-286">
+                                 <a href="{% url 'services' %}"><span class="ui-menu-item-wrapper">Services</span></a>
+                              </li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-290">
+                                 <a href="{% url 'plan' %}"><span class="ui-menu-item-wrapper">Pricing</span></a>
+                              </li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-304">
+                                 <a href="{% url 'contact' %}"><span class="ui-menu-item-wrapper">Contact Us</span></a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">
+                           <div class="uicore-cta-wrapper">
+                              <a href="{% url 'signin' %}"
+                                 target="_self"
+                                 class="uicore-btn uicore-inverted"
+                                 >
+                              <span class="elementor-button-text">
+                              Login                   </span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="uicore-mobile-head-right">
+                        <div class="uicore-cta-wrapper">
+                           <a href="{% url 'signin' %}"
+                              target="_self"
+                              class="uicore-btn uicore-inverted"
+                              >
+                           <span class="elementor-button-text">
+                           Signin                    </span>
+                           </a>
+                        </div>
+                        <button type="button" class="uicore-toggle uicore-ham" aria-label="mobile-menu">
+                        <span class="bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        </span>
+                        </button>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+            <!-- #wrapper-navbar end -->
+            <!-- 1.3 uicore_page -->			
+            <div id="content" class="uicore-content">
+               <!-- 1.4 uicore_before_content -->
+               <div id="primary" class="content-area">
+                  <article id="post-79" class="post-79 page type-page status-publish hentry">
+                     <main class="entry-content">
+                        <div data-elementor-type="wp-page" data-elementor-id="79" class="elementor elementor-79" data-elementor-settings="{&quot;element_pack_global_tooltip_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}">
+                           <div class="elementor-section elementor-top-section elementor-element elementor-element-391e29e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="391e29e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+                              <div class="elementor-background-overlay"></div>
+                              <div class="elementor-container elementor-column-gap-default">
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3d6906b" data-id="3d6906b" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-32737e4 elementor-widget elementor-widget-heading" data-id="32737e4" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h5 class="elementor-heading-title elementor-size-default">Services</h5>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-422dd6e elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="422dd6e" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h1 class="elementor-heading-title elementor-size-default">The complete energy investment solutions for every investor</h1>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-fb7ef9e elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="fb7ef9e" data-element_type="widget" data-widget_type="text-editor.default">
+                                          <div class="elementor-widget-container">
+                                            Alpha Oil Hedge provides a complete suite of oil, gas, and alternative energy investment services designed to help investors build resilient, high-performing portfolios. Whether you're expanding your holdings or entering the energy sector for the first time, our platform delivers the tools, insights, and opportunities you need to succeed.							
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-a6f1b59 elementor-widget elementor-widget-button" data-id="a6f1b59" data-element_type="widget" data-widget_type="button.default">
+                                          <div class="elementor-widget-container">
+                                             <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="{% url 'signup' %}">
+                                                <span class="elementor-button-content-wrapper">
+                                                <span class="elementor-button-text">Get Started</span>
+                                                </span>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-430c061" data-id="430c061" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-b6bd084 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image" data-id="b6bd084" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                          <div class="elementor-widget-container">
+                                             <img loading="lazy" decoding="async" width="480" height="492" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-2.webp" class="attachment-full size-full wp-image-82" alt="" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-2.webp 480w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-2-293x300.webp 293w" sizes="(max-width: 480px) 100vw, 480px" />															
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-bdad773 elementor-widget elementor-widget-image" data-id="bdad773" data-element_type="widget" data-widget_type="image.default">
+                                          <div class="elementor-widget-container">
+                                             <img loading="lazy" decoding="async" width="1087" height="650" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image.webp" class="attachment-full size-full wp-image-81" alt="" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image.webp 1087w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-300x179.webp 300w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-1024x612.webp 1024w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-768x459.webp 768w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-650x389.webp 650w" sizes="(max-width: 1087px) 100vw, 1087px" />															
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-cbb40d6 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image" data-id="cbb40d6" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                          <div class="elementor-widget-container">
+                                             <img loading="lazy" decoding="async" width="836" height="584" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-3.webp" class="attachment-full size-full wp-image-83" alt="" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-3.webp 836w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-3-300x210.webp 300w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-3-768x536.webp 768w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-3-650x454.webp 650w" sizes="(max-width: 836px) 100vw, 836px" />															
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-b252c13 elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-image" data-id="b252c13" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                          <div class="elementor-widget-container">
+                                             <img loading="lazy" decoding="async" width="776" height="176" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-4.webp" class="attachment-full size-full wp-image-84" alt="" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-4.webp 776w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-4-300x68.webp 300w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-4-768x174.webp 768w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Hero-Image-4-650x147.webp 650w" sizes="(max-width: 776px) 100vw, 776px" />															
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="elementor-section elementor-top-section elementor-element elementor-element-0fe80af elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0fe80af" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                              <div class="elementor-background-overlay"></div>
+                              <div class="elementor-container elementor-column-gap-no">
+                                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e493f19" data-id="e493f19" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <section class="elementor-section elementor-inner-section elementor-element elementor-element-b83aa71 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="b83aa71" data-element_type="section">
+                                          <div class="elementor-container elementor-column-gap-default">
+                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6a7e1d7" data-id="6a7e1d7" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-fe267d1 elementor-widget elementor-widget-heading" data-id="fe267d1" data-element_type="widget" data-widget_type="heading.default">
+                                                      <div class="elementor-widget-container">
+                                                         <h2 class="elementor-heading-title elementor-size-default">Financing to Keep Your Investments Moving Forward</h2>
+                                                      </div>
+                                                   </div>
+                                                   <div class="elementor-element elementor-element-8705022 elementor-widget elementor-widget-text-editor" data-id="8705022" data-element_type="widget" data-widget_type="text-editor.default">
+                                                      <div class="elementor-widget-container">
+                                                        Energy markets evolve quickly — and so do the opportunities. AlphaOilHedge connects investors with high-value projects across exploration, production, and infrastructure, supported by data-driven insights and real-time market intelligence.							
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e483679" data-id="e483679" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-432fb41 elementor-position-left elementor-vertical-align-middle bdt-icon-type-icon bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="432fb41" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <i aria-hidden="true" class="ti ti-check"></i>
+                                                               </span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Access exclusive, institutional-grade energy investments				</span>
+                                                               </h4>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="elementor-element elementor-element-ece8229 elementor-position-left elementor-vertical-align-middle bdt-icon-type-icon bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="ece8229" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <i aria-hidden="true" class="ti ti-check"></i>
+                                                               </span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Diversify across upstream, midstream, and transitional energy assets				</span>
+                                                               </h4>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <div class="elementor-element elementor-element-4a09e3c elementor-position-left elementor-vertical-align-middle bdt-icon-type-icon bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="4a09e3c" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <i aria-hidden="true" class="ti ti-check"></i>
+                                                               </span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Evaluate risk and growth potential with transparent reporting				</span>
+                                                               </h4>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </section>
+                                       <div class="elementor-element elementor-element-32fc16e elementor-widget elementor-widget-heading" data-id="32fc16e" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h5 class="elementor-heading-title elementor-size-default">Why AlphaOilHedge?</h5>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-571e8cb elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="571e8cb" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h2 class="elementor-heading-title elementor-size-default">Every Feature You Need to Grow Your Energy Portfolio</h2>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-455f560 elementor-widget elementor-widget-text-editor" data-id="455f560" data-element_type="widget" data-widget_type="text-editor.default">
+                                          <div class="elementor-widget-container">
+                                            High-Yield Exploration & Production Opportunities.								
+                                          </div>
+                                       </div>
+                                       <section class="elementor-section elementor-inner-section elementor-element elementor-element-545b9a6 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="545b9a6" data-element_type="section">
+                                          <div class="elementor-container elementor-column-gap-default">
+                                             <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-a34f0d4" data-id="a34f0d4" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-27da45a bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="27da45a" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <i aria-hidden="true" class="far fa-money-bill-alt"></i>
+                                                               </span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Zero-Fee Account Funding & Transfers</span>
+                                                               </h4>
+                                                               <div class="bdt-ep-advanced-icon-box-description">
+                                                                  <p>Invest with confidence and convenience. AlphaOilHedge allows investors to fund accounts and move capital between projects with no hidden fees, ensuring your money works entirely for you.</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c0d99a4" data-id="c0d99a4" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-27531b0 bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="27531b0" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <i aria-hidden="true" class="far fa-flag"></i>
+                                                               </span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Designed for Investors at Every Level				</span>
+                                                               </h4>
+                                                               <div class="bdt-ep-advanced-icon-box-description">
+                                                                  <p>Whether you're a seasoned energy investor or building your first portfolio, our advisory team and analytics platform provide step-by-step support, helping you choose the right investment strategy for your goals.</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-640e73d" data-id="640e73d" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-6b5de0e bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="6b5de0e" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <i aria-hidden="true" class="far fa-folder-open"></i>
+                                                               </span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Instant Access to Energy Capital Markets</span>
+                                                               </h4>
+                                                               <div class="bdt-ep-advanced-icon-box-description">
+                                                                  <p>Explore opportunities across drilling programs, pipeline expansions, LNG development, refinery upgrades, and more — all through a single dashboard that updates in real time.</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-9b92daf" data-id="9b92daf" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-d77374d bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="d77374d" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <i aria-hidden="true" class="far fa-share-square"></i>
+                                                               </span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Automated Royalty & Yield Allocation</span>
+                                                               </h4>
+                                                               <div class="bdt-ep-advanced-icon-box-description">
+                                                                  <p>Our advanced system calculates and distributes earnings from your oil & gas holdings automatically. Receive real-time breakdowns of monthly royalties, project performance, and long-term projections.</p>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <section class="elementor-section elementor-top-section elementor-element elementor-element-de9b4c0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="de9b4c0" data-element_type="section">
+                              <div class="elementor-container elementor-column-gap-default">
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0cf4628" data-id="0cf4628" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-3c8447d elementor-widget elementor-widget-image" data-id="3c8447d" data-element_type="widget" data-widget_type="image.default">
+                                          <div class="elementor-widget-container">
+                                             <img loading="lazy" decoding="async" width="824" height="474" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Taxes-Image.webp" class="attachment-full size-full wp-image-86" alt="" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Taxes-Image.webp 824w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Taxes-Image-300x173.webp 300w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Taxes-Image-768x442.webp 768w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Taxes-Image-650x374.webp 650w" sizes="(max-width: 824px) 100vw, 824px" />															
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0690346" data-id="0690346" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-e23c4fb elementor-widget elementor-widget-heading" data-id="e23c4fb" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h2 class="elementor-heading-title elementor-size-default">Control Your Investments with Smart Risk Management Tools</h2>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-a77e848 elementor-widget elementor-widget-text-editor" data-id="a77e848" data-element_type="widget" data-widget_type="text-editor.default">
+                                          <div class="elementor-widget-container">
+                                            Monitor your portfolio through comprehensive dashboards that track commodity prices, project performance, operator updates, and risk indicators. Make informed decisions with confidence.								
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-26e6bac elementor-widget elementor-widget-button" data-id="26e6bac" data-element_type="widget" data-widget_type="button.default">
+                                          <div class="elementor-widget-container">
+                                             <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="{% url 'about' %}">
+                                                <span class="elementor-button-content-wrapper">
+                                                <span class="elementor-button-text">Learn More</span>
+                                                </span>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+                           <section class="elementor-section elementor-top-section elementor-element elementor-element-22f841c elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="22f841c" data-element_type="section">
+                              <div class="elementor-container elementor-column-gap-default">
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7d00c86" data-id="7d00c86" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-4d01bcf elementor-widget elementor-widget-heading" data-id="4d01bcf" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h2 class="elementor-heading-title elementor-size-default">Take Full Control of Your Energy Portfolio
+                                             </h2>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-7c84f09 elementor-widget elementor-widget-text-editor" data-id="7c84f09" data-element_type="widget" data-widget_type="text-editor.default">
+                                          <div class="elementor-widget-container">
+                                            From funding your account to allocating capital across multiple projects, AlphaOilHedge gives you full oversight of your energy investment strategy — all in one intuitive platform.							
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-f9202c9 elementor-widget elementor-widget-button" data-id="f9202c9" data-element_type="widget" data-widget_type="button.default">
+                                          <div class="elementor-widget-container">
+                                             <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="{% url 'signin' %}">
+                                                <span class="elementor-button-content-wrapper">
+                                                <span class="elementor-button-text">Learn More</span>
+                                                </span>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-002ccb8" data-id="002ccb8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-49d978d elementor-widget elementor-widget-image" data-id="49d978d" data-element_type="widget" data-widget_type="image.default">
+                                          <div class="elementor-widget-container">
+                                             <img loading="lazy" decoding="async" width="864" height="812" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Payments-Image.webp" class="attachment-full size-full wp-image-88" alt="" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Payments-Image.webp 864w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Payments-Image-300x282.webp 300w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Payments-Image-768x722.webp 768w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Payments-Image-650x611.webp 650w" sizes="(max-width: 864px) 100vw, 864px" />															
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+                           <section class="elementor-section elementor-top-section elementor-element elementor-element-ea36b9a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ea36b9a" data-element_type="section">
+                              <div class="elementor-container elementor-column-gap-default">
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4639955" data-id="4639955" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-7169d84 elementor-widget elementor-widget-image" data-id="7169d84" data-element_type="widget" data-widget_type="image.default">
+                                          <div class="elementor-widget-container">
+                                             <img loading="lazy" decoding="async" width="864" height="812" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Money-Image.webp" class="attachment-full size-full wp-image-89" alt="" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Money-Image.webp 864w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Money-Image-300x282.webp 300w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Money-Image-768x722.webp 768w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Services-Money-Image-650x611.webp 650w" sizes="(max-width: 864px) 100vw, 864px" />															
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a3f318a" data-id="a3f318a" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-3afa433 elementor-widget elementor-widget-heading" data-id="3afa433" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h2 class="elementor-heading-title elementor-size-default">Investment Integrations</h2>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-2f70016 elementor-widget elementor-widget-text-editor" data-id="2f70016" data-element_type="widget" data-widget_type="text-editor.default">
+                                          <div class="elementor-widget-container">
+                                            AlphaOilHedge connects seamlessly with multiple financial systems, giving investors the flexibility to fund accounts, track payments, and manage global transactions with ease.							
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-4c0d0ab elementor-widget elementor-widget-button" data-id="4c0d0ab" data-element_type="widget" data-widget_type="button.default">
+                                          <div class="elementor-widget-container">
+                                             <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="{% url 'contact' %}">
+                                                <span class="elementor-button-content-wrapper">
+                                                <span class="elementor-button-text">Learn More</span>
+                                                </span>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+                           <section class="elementor-section elementor-top-section elementor-element elementor-element-64949dd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="64949dd" data-element_type="section">
+                              <div class="elementor-container elementor-column-gap-default">
+                                 <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fa93dfb" data-id="fa93dfb" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-background-overlay"></div>
+                                       <div class="elementor-element elementor-element-f62d8ad elementor-widget elementor-widget-heading" data-id="f62d8ad" data-element_type="widget" data-widget_type="heading.default">
+                                          <div class="elementor-widget-container">
+                                             <h2 class="elementor-heading-title elementor-size-default">Pipeline Infrastructure Investments</h2>
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-9e5ccf2 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="9e5ccf2" data-element_type="widget" data-widget_type="text-editor.default">
+                                          <div class="elementor-widget-container">
+                                            Participate in midstream development, including pipelines, terminals, and storage facilities — offering stable, long-term cash flow backed by national demand.								
+                                          </div>
+                                       </div>
+                                       <div class="elementor-element elementor-element-cf8116e elementor-widget elementor-widget-spacer" data-id="cf8116e" data-element_type="widget" data-widget_type="spacer.default">
+                                          <div class="elementor-widget-container">
+                                             <div class="elementor-spacer">
+                                                <div class="elementor-spacer-inner"></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+                           <div class="elementor-section elementor-top-section elementor-element elementor-element-c1afb60 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c1afb60" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                              <div class="elementor-container elementor-column-gap-default">
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fee0701" data-id="fee0701" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <div class="elementor-element elementor-element-98cfcf4 bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="98cfcf4" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                          <div class="elementor-widget-container">
+                                             <div class="bdt-ep-advanced-icon-box">
+                                                <div class="bdt-ep-advanced-icon-box-icon">
+                                                   <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                   <i aria-hidden="true" class="ti ti-wallet"></i>
+                                                   </span>
+                                                </div>
+                                                <div class="bdt-ep-advanced-icon-box-content">
+                                                   <h2 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                      <span >
+                                                        Mineral Rights Acquisition Support				</span>
+                                                   </h2>
+                                                   <div class="bdt-ep-advanced-icon-box-description">
+                                                    Leverage tools and advisory support to identify, acquire, and manage high-value mineral rights properties.					
+                                                   </div>
+                                                   <a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block" href="{% url 'contact' %}">
+                                                   Learn More
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a4818b8" data-id="a4818b8" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                       <section class="elementor-section elementor-inner-section elementor-element elementor-element-f8b20b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f8b20b8" data-element_type="section">
+                                          <div class="elementor-container elementor-column-gap-default">
+                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ce2db32" data-id="ce2db32" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-feb5ad9 bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="feb5ad9" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <img loading="lazy" decoding="async" width="378" height="148" src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Pages-logo-8.webp" class="attachment-full size-full" alt="Apple Pay" srcset="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Pages-logo-8.webp 378w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/Pages-logo-8-300x117.webp 300w" sizes="(max-width: 378px) 100vw, 378px" />				</span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Royalty Tracking & Management Systems				</span>
+                                                               </h4>
+                                                               <div class="bdt-ep-advanced-icon-box-description">
+                                                                Automated tracking ensures your monthly royalty payments and distributions are always accurate, transparent, and easy to monitor.				
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d5ef11c" data-id="d5ef11c" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-226d221 bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="226d221" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <img decoding="async" src="https://finflow.uicore.co/online-banking/wp-content/uploads/sites/2/2023/01/Online-Banking-Wallet-Image-2.webp" alt="Paypal">				</span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    International Funding & Wire Support				</span>
+                                                               </h4>
+                                                               <div class="bdt-ep-advanced-icon-box-description">
+                                                                Seamlessly move capital across borders and support global investment activities with secure and compliant international transaction options.					
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </section>
+                                       <section class="elementor-section elementor-inner-section elementor-element elementor-element-971db4c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="971db4c" data-element_type="section">
+                                          <div class="elementor-container elementor-column-gap-default">
+                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-80529e6" data-id="80529e6" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                   <div class="elementor-element elementor-element-8223172 bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="8223172" data-element_type="widget" data-widget_type="bdt-advanced-icon-box.default">
+                                                      <div class="elementor-widget-container">
+                                                         <div class="bdt-ep-advanced-icon-box">
+                                                            <div class="bdt-ep-advanced-icon-box-icon">
+                                                               <span class="bdt-ep-advanced-icon-box-icon-wrap">
+                                                               <img decoding="async" src="https://finflow.uicore.co/online-banking/wp-content/uploads/sites/2/2023/01/Online-Banking-Wallet-Image-3.webp" alt="Stripe">				</span>
+                                                            </div>
+                                                            <div class="bdt-ep-advanced-icon-box-content">
+                                                               <h4 class="bdt-ep-advanced-icon-box-title ep-title-">
+                                                                  <span >
+                                                                    Get Started Today				</span>
+                                                               </h4>
+                                                               <div class="bdt-ep-advanced-icon-box-description">
+                                                                Begin building a stronger, more diversified investment portfolio with access to verified oil & gas ventures and alternative energy opportunities. Our onboarding process is simple and designed for both new and experienced investors.				
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </section>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </main>
+                  </article>
+               </div>
+               <!-- #primary -->
+            </div>
+            <!-- #content -->
+             
+            <footer id="uicore-tb-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+               <div data-elementor-type="uicore-tb" data-elementor-id="34" class="elementor elementor-34" data-elementor-settings="{&quot;element_pack_global_tooltip_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;element_pack_global_tooltip_padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;element_pack_global_tooltip_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}">
+                  <div class="elementor-section elementor-top-section elementor-element elementor-element-985ca6f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="985ca6f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                     <div class="elementor-background-overlay"></div>
+                     <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-18e2337" data-id="18e2337" data-element_type="column">
+                           <div class="elementor-widget-wrap elementor-element-populated">
+                              <section class="elementor-section elementor-inner-section elementor-element elementor-element-f53dbce elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f53dbce" data-element_type="section">
+                                 <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-290b458" data-id="290b458" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-b54336d elementor-widget elementor-widget-heading" data-id="b54336d" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container">
+                                                <h2 class="elementor-heading-title elementor-size-default">Contact information</h2>
+                                             </div>
+                                          </div>
+                                          <div class="elementor-element elementor-element-ac47d26 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="ac47d26" data-element_type="widget" data-widget_type="text-editor.default">
+                                             <div class="elementor-widget-container">
+                                                You can reach us using the available channels below								
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-094e1a2" data-id="094e1a2" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-221af50 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="221af50" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-icon">
+                                                      <i aria-hidden="true" class="far fa-envelope"></i>						</span>
+                                                      <span class="elementor-icon-list-text">support@AlphaOilHedge.com</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-icon">
+                                                      <i aria-hidden="true" class="fas fa-phone-alt"></i>						</span>
+                                                      <span class="elementor-icon-list-text">Encrypted</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-icon">
+                                                      <i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+                                                      <span class="elementor-icon-list-text">Global</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </section>
+                              <section class="elementor-section elementor-inner-section elementor-element elementor-element-4d119ac elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d119ac" data-element_type="section">
+                                 <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-a513b19" data-id="a513b19" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-937a7cf elementor-widget elementor-widget-heading" data-id="937a7cf" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container">
+                                                <h5 class="elementor-heading-title elementor-size-default">Product</h5>
+                                             </div>
+                                          </div>
+                                          <div class="elementor-element elementor-element-bdd04f1 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="bdd04f1" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-text">Overview</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-text">Solutions</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="{% url 'plan' %}">
+                                                      <span class="elementor-icon-list-text">Pricing</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-9f59716" data-id="9f59716" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-0b16c85 elementor-widget elementor-widget-heading" data-id="0b16c85" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container">
+                                                <h5 class="elementor-heading-title elementor-size-default">Company</h5>
+                                             </div>
+                                          </div>
+                                          <div class="elementor-element elementor-element-79511dd elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="79511dd" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="{% url 'about' %}">
+                                                      <span class="elementor-icon-list-text">About us</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="{% url 'contact' %}">
+                                                      <span class="elementor-icon-list-text">Contact</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-a42c6ba" data-id="a42c6ba" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-d166441 elementor-widget elementor-widget-heading" data-id="d166441" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container">
+                                                <h5 class="elementor-heading-title elementor-size-default">Resources</h5>
+                                             </div>
+                                          </div>
+                                          <div class="elementor-element elementor-element-e0d08f2 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e0d08f2" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="https://www.upstreamonline.com">
+                                                      <span class="elementor-icon-list-text">Upstream Online</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="https://www.worldoil.com">
+                                                      <span class="elementor-icon-list-text">World Oil</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="https://www.rigzone.com">
+                                                      <span class="elementor-icon-list-text">Rigzone</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-5b0c30d" data-id="5b0c30d" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-ee7b5ca elementor-widget elementor-widget-heading" data-id="ee7b5ca" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container">
+                                                <h5 class="elementor-heading-title elementor-size-default">Social</h5>
+                                             </div>
+                                          </div>
+                                          <div class="elementor-element elementor-element-13753f4 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="13753f4" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-text">Twitter</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-text">LinkedIn</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-text">Facebook</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="#">
+                                                      <span class="elementor-icon-list-text">GitHub</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-a75314b" data-id="a75314b" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-650ca3a elementor-widget elementor-widget-heading" data-id="650ca3a" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container">
+                                                <h5 class="elementor-heading-title elementor-size-default">Legal</h5>
+                                             </div>
+                                          </div>
+                                          <div class="elementor-element elementor-element-38ba11f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="38ba11f" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container">
+                                                <ul class="elementor-icon-list-items">
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="{% url 'terms' %}">
+                                                      <span class="elementor-icon-list-text">Terms</span>
+                                                      </a>
+                                                   </li>
+                                                   <li class="elementor-icon-list-item">
+                                                      <a href="{% url 'privacy' %}">
+                                                      <span class="elementor-icon-list-text">Privacy</span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </section>
+                              <div class="elementor-section elementor-inner-section elementor-element elementor-element-868d6bb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="868d6bb" data-element_type="section">
+                                 <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f8a4e68" data-id="f8a4e68" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-4a315e6 elementor-widget elementor-widget-image" data-id="4a315e6" data-element_type="widget" data-widget_type="image.default">
+                                             <div class="elementor-widget-container">
+                                                <img width="341" height="64" src="/static/lionhead.png" class="attachment-full size-full wp-image-5" alt="" srcset="/static/lionhead.png 341w, https://finflow.uicore.co/pages/wp-content/uploads/sites/14/2023/02/finflow-logo-1-300x56.webp 300w" sizes="(max-width: 341px) 100vw, 341px" />															
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e1648aa" data-id="e1648aa" data-element_type="column">
+                                       <div class="elementor-widget-wrap elementor-element-populated">
+                                          <div class="elementor-element elementor-element-b752403 elementor-widget elementor-widget-text-editor" data-id="b752403" data-element_type="widget" data-widget_type="text-editor.default">
+                                             <div class="elementor-widget-container">
+                                                <p>Copyright: © 2026 AlphaOilHedge. All Rights Reserved.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </footer> 
+            <!-- 1.5 uicore_content_end -->
+         </div>
+         <!-- #page -->
+
+         <div class="ui-link-helper">
+            <a class="ui-tooltip-link" href="{% url 'services' %}" target="_blank">
+               <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M32 24.34a6 6 0 11-4 0V14a2 2 0 014 0v10.34zm-12-.68V34a2 2 0 01-4 0V23.66a6 6 0 114 0zM12 4h24a8 8 0 018 8v24a8 8 0 01-8 8H12a8 8 0 01-8-8V12a8 8 0 018-8zm0 4a4 4 0 00-4 4v24a4 4 0 004 4h24a4 4 0 004-4V12a4 4 0 00-4-4H12zm6 12a2 2 0 100-4 2 2 0 000 4zm12 12a2 2 0 100-4 2 2 0 000 4z" fill="#1C1C1C" fill-rule="nonzero"/>
+               </svg>
+               <span class="ui-tooltip">Services
+               <span></span>
+               </span>
+            </a>
+            <a class="ui-tooltip-link" href="{% url 'about' %}" target="_blank">
+               <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 39.95L11.13 37.1A4 4 0 018 33.2V12a4 4 0 014-4h6a2 2 0 100-4h-6a8 8 0 00-8 8v21.19a8 8 0 006.26 7.8L24 44.06 37.74 41A8 8 0 0044 33.19V12a8 8 0 00-8-8h-6a8 8 0 00-8 8v22a2 2 0 004 0V12a4 4 0 014-4h6a4 4 0 014 4v21.19a4 4 0 01-3.13 3.9L24 39.95z" fill="#1C1C1C" fill-rule="nonzero"/>
+               </svg>
+               <span class="ui-tooltip">About Us
+               <span></span>
+               </span>
+            </a>
+            <a class="ui-tooltip-link" href="{% url 'contact' %}" target="_blank">
+               <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 42a2 2 0 01-4 0v-2a8 8 0 018-8h8a4 4 0 004-4V12a4 4 0 00-4-4H12a4 4 0 00-4 4v16a4 4 0 004 4h2a2 2 0 010 4h-2a8 8 0 01-8-8V12a8 8 0 018-8h24a8 8 0 018 8v16a8 8 0 01-8 8h-8a4 4 0 00-4 4v2zm0-20a2 2 0 110-4 2 2 0 010 4zm-8 0a2 2 0 110-4 2 2 0 010 4zm16 0a2 2 0 110-4 2 2 0 010 4z" fill="#1C1C1C" fill-rule="nonzero"/>
+               </svg>
+               <span class="ui-tooltip">Contact Us
+               <span></span>
+               </span>
+            </a>
+            <a class="ui-tooltip-link" href="{% url 'plan' %}" target="_blank">
+               <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 8a2 2 0 110-4h2a8 8 0 018 8v16a4 4 0 004 4h16a4 4 0 004-4v-8a4 4 0 00-4-4H22a2 2 0 110-4h14a8 8 0 018 8v8a8 8 0 01-8 8H20a8 8 0 01-8-8V12a4 4 0 00-4-4H6zm31 36a3 3 0 110-6 3 3 0 010 6zm-18 0a3 3 0 110-6 3 3 0 010 6z" fill="#1C1C1C" fill-rule="nonzero"/>
+               </svg>
+               <span class="ui-tooltip">Pricing
+               <span></span>
+               </span>
+            </a>
+         </div>
+
+         <!-- 1.6 uicore_body_end -->
+      </div>
+      <!-- 1.7 uicore_after_body_content --><script> 
+         var uicore_frontend = {'back':'Back', 'rtl' : '','mobile_br' : '1025'};
+          console.log( 'Using UiCore Pro v.2.2.4');
+          console.log( 'Powered By UiCore Framework v.6.2.4');
+          
+      </script> <script type="speculationrules">
+         {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/pages\/*"},{"not":{"href_matches":["\/pages\/wp-*.php","\/pages\/wp-admin\/*","\/pages\/wp-content\/uploads\/sites\/14\/*","\/pages\/wp-content\/*","\/pages\/wp-content\/plugins\/*","\/pages\/wp-content\/themes\/uicore-pro\/*","\/pages\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+      </script>
+      <script>
+         const lazyloadRunObserver = () => {
+         	const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+         	const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+         		entries.forEach( ( entry ) => {
+         			if ( entry.isIntersecting ) {
+         				let lazyloadBackground = entry.target;
+         				if( lazyloadBackground ) {
+         					lazyloadBackground.classList.add( 'e-lazyloaded' );
+         				}
+         				lazyloadBackgroundObserver.unobserve( entry.target );
+         			}
+         		});
+         	}, { rootMargin: '200px 0px 200px 0px' } );
+         	lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+         		lazyloadBackgroundObserver.observe( lazyloadBackground );
+         	} );
+         };
+         const events = [
+         	'DOMContentLoaded',
+         	'elementor/lazyload/observe',
+         ];
+         events.forEach( ( event ) => {
+         	document.addEventListener( event, lazyloadRunObserver );
+         } );
+      </script>
+      <link rel='stylesheet' id='elementor-post-34-css' href='https://finflow.uicore.co/pages/wp-content/uploads/sites/14/elementor/css/post-34.css?ver=1757496735' media='all' />
+      <link rel='stylesheet' id='elementor-post-308-css' href='https://finflow.uicore.co/pages/wp-content/uploads/sites/14/elementor/css/post-308.css?ver=1757496736' media='all' />
+      <link rel='stylesheet' id='font-awesome-5-all-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.32.3' media='all' />
+      <link rel='stylesheet' id='font-awesome-4-shim-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.32.3' media='all' />
+      <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all' />
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=4.0.6" id="cute-alert-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.32.3" id="elementor-webpack-runtime-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.3" id="elementor-frontend-modules-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+      <script id="elementor-frontend-js-before">
+         var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.3","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true},"urls":{"assets":"https:\/\/finflow.uicore.co\/pages\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/finflow.uicore.co\/pages\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/finflow.uicore.co\/pages\/wp-content\/uploads\/sites\/14"},"nonces":{"floatingButtonsClickTracking":"c6c062aeb7"},"swiperClass":"swiper","settings":{"page":{"element_pack_global_tooltip_width":{"unit":"px","size":"","sizes":[]},"element_pack_global_tooltip_width_tablet":{"unit":"px","size":"","sizes":[]},"element_pack_global_tooltip_width_mobile":{"unit":"px","size":"","sizes":[]},"element_pack_global_tooltip_padding":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_padding_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_padding_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_border_radius":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_border_radius_tablet":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true},"element_pack_global_tooltip_border_radius_mobile":{"unit":"px","top":"","right":"","bottom":"","left":"","isLinked":true}},"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":79,"title":"Services%20%E2%80%93%20Pages","excerpt":"","featuredImage":false}};
+      </script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.3" id="elementor-frontend-js"></script>
+      <script id="bdt-uikit-js-extra">
+         var element_pack_ajax_login_config = {"ajaxurl":"https:\/\/finflow.uicore.co\/pages\/wp-admin\/admin-ajax.php","language":"en","loadingmessage":"Sending user info, please wait...","unknownerror":"Unknown error, make sure access is correct!"};
+         var ElementPackConfig = {"ajaxurl":"https:\/\/finflow.uicore.co\/pages\/wp-admin\/admin-ajax.php","nonce":"9b6ee6eed3","data_table":{"language":{"sLengthMenu":"Show _MENU_ Entries","sInfo":"Showing _START_ to _END_ of _TOTAL_ entries","sSearch":"Search :","sZeroRecords":"No matching records found","oPaginate":{"sPrevious":"Previous","sNext":"Next"}}},"contact_form":{"sending_msg":"Sending message please wait...","captcha_nd":"Invisible captcha not defined!","captcha_nr":"Could not get invisible captcha response!"},"mailchimp":{"subscribing":"Subscribing you please wait..."},"search":{"more_result":"More Results","search_result":"SEARCH RESULT","not_found":"not found"},"words_limit":{"read_more":"[read more]","read_less":"[read less]"},"elements_data":{"sections":[],"columns":[],"widgets":[]}};
+      </script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/js/bdt-uikit.min.js?ver=3.21.7" id="bdt-uikit-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-advanced-icon-box.min.js?ver=8.4.1" id="ep-advanced-icon-box-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-mailchimp.min.js?ver=8.4.1" id="ep-mailchimp-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-content/uploads/sites/14/uicore-global.js?ver=2705" id="uicore_global-js" defer></script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/bdthemes-element-pack/assets/js/common/helper.min.js?ver=8.4.1" id="element-pack-helper-js"></script>
+      <script src="https://finflow.uicore.co/pages/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.32.3" id="font-awesome-4-shim-js"></script>
+      
+      <style>
+         .uicore-animate-scroll {
+         animation-fill-mode: both;
+         animation-timing-function: linear;
+         animation-timeline: view(block);
+         }
+      </style>
+      <script>
+         (function() {
+             const supportsAnimationTimeline = CSS.supports("animation-timeline", "scroll()");
+         
+             if (!supportsAnimationTimeline && document.querySelector('.uicore-animate-scroll')) {
+                 const script = document.createElement('script');
+                 script.src = "https://finflow.uicore.co/pages/wp-content/plugins/uicore-animate/assets/js/scroll-timeline.js";
+                 script.async = true;
+                 document.head.appendChild(script);
+             }
+         })();
+      </script>
+   </body>
+</html>

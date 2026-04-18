@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Withdrawal Completed</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #0C231F;
+    --primary-light: #12342E;
+    --primary-dark: #081916;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f23;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    background: linear-gradient(180deg, #081916 0%, #0C231F 100%);
+    padding: 60px 20px;
+}
+
+.main {
+    max-width: 650px;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 90px rgba(0,0,0,.5);
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.logo-placeholder {
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 16px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* CONTENT */
+.content {
+    padding: 60px 50px;
+}
+
+.greeting {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.text-block {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.cta-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 10px 40px rgba(12,35,31,.45);
+}
+
+.divider {
+    height: 1px;
+    background: #e2e8f0;
+    margin: 50px 0;
+}
+
+/* SECURITY */
+.security-section {
+    background: linear-gradient(135deg, #081916 0%, #0C231F 100%);
+    padding: 60px 50px;
+    color: #ffffff;
+}
+
+.security-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.security-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+.security-item {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+.security-item-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.security-item-text {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* FOOTER */
+.footer {
+    background: #081916;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.footer-logo-text {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.footer-text {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 25px auto;
+    max-width: 500px;
+}
+
+.footer-links {
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    padding: 20px 0;
+}
+
+.footer-link {
+    color: var(--primary-light) !important;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 25px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .header, .content, .security-section, .footer {
+        padding: 40px 30px;
+    }
+    .hero-title {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+<center class="wrapper">
+<table class="main">
+
+<tr>
+<td class="header">
+    <div class="logo-placeholder">
+        <img src="{% static 'lionhead.png' %}" alt="Logo">
+    </div>
+    <h1 class="hero-title">Withdrawal Request Completed</h1>
+</td>
+</tr>
+
+<tr>
+<td class="content">
+    <h2 class="greeting">Hello {{name}},</h2>
+
+    <p class="text-block">
+        Your withdrawal of <strong>${{amount}}</strong> has been successfully completed and sent to the wallet address below:
+    </p>
+
+    <p class="text-block">
+        <strong>{{wallet_address}}</strong>
+    </p>
+
+    <p class="text-block">
+        If you did not initiate this transaction or received an incorrect amount, please contact our support team immediately.
+    </p>
+
+    <div class="cta-container">
+        <a href="https://www.AlphaOilHedge.com/signin/" class="cta-button">
+            Access Your Dashboard
+        </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="text-block" style="text-align:center">
+        <strong>Support Team</strong><br>
+        support@AlphaOilHedge.com
+    </p>
+</td>
+</tr>
+
+<tr>
+<td class="security-section">
+    <h2 class="security-title">Your Security Matters</h2>
+    <p class="security-subtitle">Protect your account with these best practices</p>
+
+    <div class="security-item">
+        <div class="security-item-title">Strong Passwords</div>
+        <p class="security-item-text">Use complex, unique passwords with symbols and numbers.</p>
+    </div>
+
+    <div class="security-item">
+        <div class="security-item-title">Private Credentials</div>
+        <p class="security-item-text">Never share your login or recovery phrases.</p>
+    </div>
+
+    <div class="security-item">
+        <div class="security-item-title">Secure Networks</div>
+        <p class="security-item-text">Avoid public Wi-Fi when accessing your account.</p>
+    </div>
+
+    <div class="security-item">
+        <div class="security-item-title">Verify URLs</div>
+        <p class="security-item-text">Always confirm you are on www.AlphaOilHedge.com.</p>
+    </div>
+</td>
+</tr>
+
+<tr>
+<td class="footer">
+    <div class="footer-logo-text">AlphaOilHedge</div>
+
+    <p class="footer-text">
+        AlphaOilHedge will never request passwords, recovery phrases, or payment details.
+    </p>
+
+    <div class="footer-links">
+        <a href="https://www.AlphaOilHedge.com/about/" class="footer-link">About</a>
+        <a href="https://www.AlphaOilHedge.com/about/" class="footer-link">Support</a>
+        <a href="#" class="footer-link">Unsubscribe</a>
+        <a href="https://www.AlphaOilHedge.com/" class="footer-link">View Online</a>
+    </div>
+
+    <p class="footer-copyright">
+        © 2020-2025 AlphaOilHedge. All rights reserved.
+    </p>
+</td>
+</tr>
+
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="zxx">
+{% load static %}
+   <!-- Mirrored from Alpha Oil.org/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:01:14 GMT -->
+   <!-- Added by HTTrack -->
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   <!-- /Added by HTTrack -->
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="author" content="Alpha Oil Developers">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Alpha Oil, Alpha Oil, Alpha Oil.org swap, Buy tokens, send and receive, Crypto, Receive and send, Alpha Oil , Alpha Oil">
+      <meta name=”robots” content=”index, follow”>
+      <!-- Links of CSS files -->
+      <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/static/assets/css/flaticon.css">
+      <link rel="stylesheet" href="/static/assets/css/animate.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/static/assets/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="/static/assets/css/boxicons.min.css">
+      <link rel="stylesheet" href="/static/assets/css/meanmenu.min.css">
+      <link rel="stylesheet" href="/static/assets/css/nice-select.min.css">
+      <link rel="stylesheet" href="/static/assets/css/fancybox.min.css">
+      <link rel="stylesheet" href="/static/assets/css/odometer.min.css">
+      <link rel="stylesheet" href="/static/assets/css/magnific-popup.min.css">
+      <link rel="stylesheet" href="/static/assets/css/style.css">
+      <link rel="stylesheet" href="/static/assets/css/dark.css">
+      <link rel="stylesheet" href="/static/assets/css/responsive.css">
+      <title>Alpha Oil</title>
+      <link rel="icon" type="image/png" href="/static/lionhead.png">
+   </head>
+   </head>
+   <body class="data-science-color-css">
+      <!-- Start Navbar Area -->
+      <div class="navbar-area">
+         <div class="dibiz-responsive-nav">
+            <div class="container">
+               <div class="dibiz-responsive-menu">
+                  <div class="logo">
+                     <a href="{% url 'home' %}">
+                        <img src="/static/front_pages/lionhead.png" style="height: 80px; width: 80px;"></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="dibiz-nav">
+            <div class="container">
+               <nav class="navbar navbar-expand-md navbar-light">
+                  <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="/static/front_pages/lionhead.png" style="height: 80px; width: 80px;"></a>
+                  <div class="collapse navbar-collapse mean-menu">
+                     <ul class="navbar-nav">
+                        <li class="nav-item"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Company <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About Us</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'plan' %}" class="nav-link">Plans</a></li>
+                        <li class="nav-item">
+                           <a href="#" class="nav-link">Services <i class='bx bx-chevron-down'></i></a>
+                           <ul class="dropdown-menu">
+
+                            <li class="nav-item"><a href="{% url 'renewableEnergy' %}" class="nav-link">Renewable Energy</a></li>
+                            <li class="nav-item"><a href="{% url 'financialService' %}" class="nav-link">Financial Service</a></li>
+                            <li class="nav-item"><a href="{% url 'energy' %}" class="nav-link">Energy</a></li>
+                            <li class="nav-item"><a href="{% url 'portfolioManagement' %}" class="nav-link">Portfolio Management Service</a></li>
+                           <li class="nav-item"><a href="{% url 'financialAdvising' %}" class="nav-link">Financial Advising</a></li>
+                         </ul>
+                        </li>
+                        <li class="nav-item"><a href="{% url 'signin' %}" class="nav-link">Log In</a></li>
+                     </ul>
+                     <div class="others-option d-flex align-items-center">
+                        <div class="option-item">
+                           <div class="side-menu-btn">
+                              <i class="flaticon-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                           </div>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+         <div class="others-option-for-responsive">
+            <div class="container">
+               <div class="dot-menu">
+                  <div class="inner">
+                     <div class="circle circle-one"></div>
+                     <div class="circle circle-two"></div>
+                     <div class="circle circle-three"></div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="option-inner">
+                     <div class="others-option justify-content-center d-flex align-items-center">
+                        <div class="option-item">
+                           <div class="side-menu-btn">
+                              <i class="flaticon-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                           </div>
+                        </div>
+                        <div class="option-item">
+                           <div class="switch-box">
+                              <label id="switch" class="switch">
+                              <input type="checkbox" onchange="toggleTheme()" id="slider">
+                              <span class="slider round"></span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Navbar Area -->
+      <!-- Sidebar Modal -->
+      <div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <button type="button" class="close" data-bs-dismiss="modal"><i class='bx bx-x'></i></button>
+               <div class="modal-body">
+                  <div class="logo">
+                     <a href="{% url 'home' %}" class="d-inline-block"><img src="/static/images/cchexnew.png" alt="image"></a>
+                  </div>
+                  <div class="sidebar-contact-info">
+                     <h2>
+                        <a href="tel:+32466906387">+32 466 90 6387</a>
+                        <span>OR</span>
+                        <a href="mailto:support@AlphaOilhedge.com"><span class="__cf_email__" data-cfemail="442c2128282b04202d262d3e6a272b29">Email Us</span></a>
+                     </h2>
+                  </div>
+                  <ul class="social-list">
+                     <li><span>Follow Us On:</span></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                     <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Sidebar Modal -->
+      <!-- Start Main Banner Area -->
+      <section class="main-banner-area">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-8 col-md-12">
+                  <div class="main-banner-content">
+                     <span class="sub-title">What We Provide</span>
+                     <h1>Reliable energy solutions across exploration, production, and offshore operations</h1>
+                     <p>Everything we do at Alpha Oil is engineered to deliver safe, efficient, and sustainable energy to global markets. Energy powers modern life, and access to dependable oil and gas resources remains essential for economic growth, industrial development, and energy security.</p>
+                     <p>Our operations span the full energy value chain — from offshore exploration and production to storage, transportation, and refined supply. We combine proven engineering practices with modern technologies to reduce operational risk, improve efficiency, and maximize asset performance.</p>
+                     <p>Our future is responsible energy development — bridging conventional oil & gas operations with innovation, digital monitoring, and environmental stewardship to meet today’s demand while preparing for tomorrow.</p>
+                     <div class="btn-box">
+                        <div class="d-flex align-items-center">
+                           <a href="{% url 'signin' %}" class="default-btn">Get Started</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12">
+                  <div>
+                     <!-- <img src="/static/images/oldie.png" align = "right" alt="image"> -->
+                     <img src="/static/about_pic.jpg" align = "right" alt="image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="shape1"><img src="/static/assets/img/shape/shape1.png" alt="image"></div>
+         <div class="shape2"><img src="/static/assets/img/shape/shape2.png" alt="image"></div>
+         <div class="shape3"><img src="/static/assets/img/shape/shape3.png" alt="image"></div>
+         <div class="shape4"><img src="/static/assets/img/shape/shape4.png" alt="image"></div>
+         <div class="shape5"><img src="/static/assets/img/shape/shape5.png" alt="image"></div>
+         <div class="shape6"><img src="/static/assets/img/shape/shape6.png" alt="image"></div>
+         <div class="shape7"><img src="/static/assets/img/shape/shape7.png" alt="image"></div>
+         <div class="shape8"><img src="/static/assets/img/shape/shape8.png" alt="image"></div>
+      </section>
+      <!-- End Main Banner Area -->
+      <!-- Start Team Area -->
+      <!--
+      <section class="team-area-two ptb-100">
+         <div class="container">
+            <div class="section-title">
+               <h2>Affiliations</h2>
+               <p>Alpha Oil delivers world-class energy solutions to global industry leaders</p>
+            </div>
+            <div class="team-slides owl-carousel owl-theme">
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/1check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/2check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/3check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/4check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/5check.svg" alt="img">
+                  </div>
+               </div>
+               <div class="single-team-member">
+                  <div class="image">
+                     <img src="/static/images/check6.png" alt="img">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="shape17"><img src="/static/assets/img/shape/shape17.png" alt="image"></div>
+      </section>
+      -->
+      <!-- End Team Area -->
+      <!-- Start About Area -->
+      <section class="about-area pb-100">
+         <div class="container-fluid">
+            <div class="section-title">
+               <h2>Our Mission</h2>
+            </div>
+            <div class="row">
+               <div class="col-lg-6 col-md-12">
+                  <div>
+                     <img src="/static/front_pages/tanker_boat.jpg" alt="image" height = "100%">
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="about-content">
+                     <div class="content">
+                        <h4>We power industries and communities by responsibly developing energy resources</h4>
+                        <p>To empower individuals worldwide with a trusted, easy-to-use investment platform that converts global oil volatility into steady, predictable profits, enabling people at al financial levels to build sustainable wealth through smart hedging </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- End About Area -->
+      <!-- Start Featured Services Area -->
+      <section class="featured-services-area pt-100 pb-70">
+         <div class="container">
+            <div class="section-title">
+               <h2>About the Company</h2>
+            </div>
+            <div class = "row">
+               <div class="col-lg-6 col-md-12">
+                  <h2>More About Alpha Oil</h2>
+                  <p>
+                    Alpha Oil is a multi-disciplinary energy company delivering integrated oil and gas solutions across upstream, offshore, and midstream operations. We provide comprehensive and customized services by combining technical expertise, advanced engineering, and operational excellence across the global energy sector.
+                    <br/>
+                    With deep experience in exploration, field development, offshore production systems, FPSO operations, logistics, and energy trading, we support national oil companies, independent producers, and industrial clients worldwide.
+                    <br/>
+                    At Alpha Oil, we recognize the critical role oil and gas continues to play in the global economy. Our mission is to responsibly unlock energy resources while mitigating risk, improving efficiency, and adhering to the highest standards of safety, environmental protection, and regulatory compliance.
+                    <br/>
+                    Alpha Oil operates across Europe, Africa, the Middle East, America, Australia, Saudi Arabia and offshore basins worldwide, with partnerships and regulated operations in multiple jurisdictions. Our team brings strong expertise in petroleum engineering, offshore operations, project finance, logistics, and energy markets.
+                    <br />
+                    We are committed to building a safe, efficient, and resilient operational ecosystem that enables reliable production, transportation, and delivery of energy resources. Through advanced technologies, real-time monitoring, and disciplined project execution, we make complex energy operations manageable and dependable.
+                    <br />
+                    Since inception, our goal has been to become an industry leader in offshore operations, field development, and integrated energy services — defined by performance, safety culture, and client trust. Our operational approach combines engineering discipline, risk management, and commercial insight to deliver sustainable long-term value.
+                </p>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <h2>Our Experience</h2>
+                  <p>Established in 2011, Alpha Oil has grown into a global energy company specializing in offshore production, upstream development, and integrated oil & gas services. Our success is built on operational reliability, technical excellence, and long-term partnerships.</p>
+                  <p>We manage and operate energy assets for national oil companies, independent producers, industrial consumers, and trading partners worldwide. Our organization consists of 500+ professionals, including petroleum engineers, offshore specialists, project managers, and commercial experts.</p>
+                  <p>We maintain operational and commercial presence in London, Geneva, Abu Dhabi, Singapore, Jeddah, Melbourne, and offshore production regions. Our leadership team brings decades of experience across upstream development, FPSO operations, subsea systems, logistics, and energy trading.</p>
+                  <p>Through strategic partnerships with engineering firms, offshore contractors, logistics providers, and technology partners, we continuously enhance our operational capabilities. As we look to the future, we remain committed to innovation, digitalization, and responsible energy development to support global demand.</p>
+                  <!--<p>
+                     Established in 2019, we are a leading global alternative financial management platform, specializing in global macro and digital /static/assets. At Alpha Oil, we have accumulated a wealth of experience that sets us apart in the industry and With a strong foundation and a passion for innovation, we have been at the forefront of transforming the financial technology landscape. Our success story is built on the trust and satisfaction of our clients. We proudly manage digital /static/assets for private and institutional investors around the world including sovereign wealth funds, corporate and public pension plans, foundations, and endowments. We have over 100+ team members and over 25+ Portfolio Managers/Traders/Sub-PMs with offices in London, New York, Geneva, Jersey, Hong Kong, Abu Dhabi, Edinburgh, Singapore, Austin, Chicago, and the Cayman Islands. Our experience extends beyond product development as we have fostered strategic partnerships with an ever-growing group of some of the best founders in Finance and crypto, leveraging their expertise and networks to enhance our service offerings. From Jack Dorsey at Block, Uri Kolodny and Eli Ben-Sasson at StarkWare, and Michael Shaulov at Fireblocks, to Elena Nadolinski at Iron Fish, Yubo Ruan at Parallel, Ming Wu at Strips, and more in stealth, these founders have expanded both our thinking and how we attend to the unique requirements of our clients. As we look to the future, we remain committed to pushing the boundaries of fintech innovation. We will continue to invest in research and development, exploring emerging technologies such as blockchain, artificial intelligence, and machine learning to unlock new possibilities and redefine the financial landscape.
+                     </p>-->
+                  <br/>
+                  <hr/>
+                  <div class="what-we-do-content-accordion">
+                     <ul class="accordion">
+                        <li class="accordion-item">
+                           <a class="accordion-title" href="javascript:void(0)">
+                           <i class="flaticon-plus"></i>
+                           Overview
+                           </a>
+                           <div class="accordion-content">
+                              <p>
+                                 Alpha Oil stands as a trailblazing force in the realm of financial services, offering users unprecedented access to a comprehensive suite of fair and rewarding financial services. Anchored in principles of transparency, Alpha Oil prides itself on providing passive returns on investment, and competitive loan rates while eliminating exorbitant fees, and executing transactions swiftly, all aimed at bolstering your financial prosperity. As a leading figure in the realm of decentralized finance (DeFi), Alpha Oil empowers and equips its users with an array of cutting-edge DApps and DeFi protocols. From trading to Liquidity mining and crypto-backed loans, the platform offers a comprehensive suite of services, placing the power directly in the hands of its community. At its core, Alpha Oil operates as a decentralized marketplace, fundamentally reshaping the way cryptocurrencies are exchanged. Through a peer-to-peer system, users can seamlessly conduct transactions without reliance on centralized intermediaries, ensuring a level of autonomy and security previously unseen in traditional financial settings. Operating with a community-centric ethos, Alpha Oil allocates 25% of its revenue back to the community, amplifying earnings on investing and borrowing. This unwavering commitment to its investors, combined with attractive interest rates and nominal fees, has fueled Alpha Oil's substantial growth trajectory since its inception, solidifying its position as a beacon of innovation in the world of decentralized finance.
+                              </p>
+                           </div>
+                        </li>
+                        <li class="accordion-item">
+                           <a class="accordion-title" href="javascript:void(0)">
+                           <i class="flaticon-plus"></i>
+                           History
+                           </a>
+                           <div class="accordion-content">
+                              <p>The Alpha Oil Network was founded in 2019 with the aim to provide a full community-orientated alternative to the traditional banking financial system for loans and return on investments. Most of the big banks and financial institutions had gotten away with risky and unethical behavior done at the expense of the owners funds; Presenting various bogus charges, transaction fees, and restraints placed that hinder asset transactions and transfers. Alpha Oil broke in, allowing its users access to services such as crypto management and crypto-backed loans where users could deposit coins as collateral to obtain loans in stable currencies. It also encourages users to stake cryptocurrency on DeFi Locked staking pools providing Liquidity and enjoying rewarding APY’s on coins staked. Since its inception, the Alpha Oil platform has experienced significant growth. The number of active users grew by about 39.79% in the second quarter of the following year. This can be broken down to a weekly average growth of 3.06% increase in the number of users. The Alpha Oil Platform boasts of over 32,000 users at the moment and holds more than $500 million in community deposits for users. Alpha Oil offers high-interest-earning savings accounts, low-interest borrowing fees, and a solid security system.</p>
+                           </div>
+                        </li>
+                        <li class="accordion-item">
+                           <a class="accordion-title" href="javascript:void(0)">
+                           <i class="flaticon-plus"></i>
+                           Licensing
+                           </a>
+                           <div class="accordion-content">
+                              <p>Alpha Oil is approved and registered by the BVI Financial Services Commission as a certified financial manager pursuant to the Investment Business (Approved Manager) Regulations (2012) (as amended) and treated as licensed for the Financial Services Commission Act 2001. As a Certified Fund, Alpha Oil is authorized by the British Virgin Islands Financial Services Commission to provide management services to investment funds and also to private & institutional investors.</p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- End Featured Services Area -->
+      <!--<section class="history-area ptb-100">
+         <div class="container">
+         <div class="section-title">
+
+         <h3>Alpha Oil is designed to provide unparalleled access to fair, rewarding financial services. Also low rates for loans, zero fees, and lightning quick transactions <span class="overlay"></span></h3>
+         </div>
+         <ol class="timeline history-timeline history-timeline-style-two">
+         <li class="timeline-block">
+         <div class="timeline-date">
+         <span>1</span>
+
+         <sup>stage</sup>
+         </div>
+         <div class="timeline-icon">
+         <span class="dot-badge"></span>
+         </div>
+         <div class="timeline-content">
+         <div class="row align-items-center">
+         <div class="col-lg-5 col-md-12">
+         <div class="image" data-tilt>
+         <img src="/static/images/exchange.jpg" alt="image">
+         </div>
+         </div>
+         <div class="col-lg-7 col-md-12">
+         <div class="content">
+         <h3>Overview</h3>
+         <p>While we’ve invested in both equity and tokens over the last four years, many have asked that we take a more active role in managing our tokens, including staking them, providing liquidity, participating in governance and trading through their platforms. Our network of builders at Ethereum, Solana, major DeFi protocols and beyond have urged us to do the same.
+         We remain committed to working collaboratively with the crypto community, including providing ongoing support for research. We will also continue to partner with crypto teams across every stage of their journey out of our seed venture, growth and expansion funds.
+         <br/>
+
+         Alpha Oil is a proof of concept type of decentralized marketplace, offering a peer-to-peer system designed for exchanging various cryptocurrencies directly among users without interference of a centralized institution. Alpha Oil is also a market leading DeFi provider, offering its users the power of various DAPPS and DeFi protocols for services like Liquidity mining and crypto backed loans. Operating on a community-first mandate, Alpha Oil returns 40% of its revenue back to its community in form of additional earnings on savings and borrowing. Combining attractive interest rates, low fees, and a strong community; the platform has experienced good growth since its inception.</p>
+         </div>
+         </div>
+         </div>
+         </div>
+         </li>
+         <li class="timeline-block">
+         <div class="timeline-date">
+         <span>2</span>
+         <sup>stage</sup>
+         </div>
+          <div class="timeline-icon">
+         <span class="dot-badge"></span>
+         </div>
+         <div class="timeline-content">
+         <div class="row align-items-center">
+         <div class="col-lg-5 col-md-12">
+         <div class="image" data-tilt>
+         <img src="/static/images/swapper.jpg" alt="image">
+         </div>
+         </div>
+         <div class="col-lg-7 col-md-12">
+         <div class="content">
+         <h3>History</h3>
+         <p>The Alpha Oil Network was founded in 2019 with the one aim to provide a full community-orientated alternative to the traditional banking financial system for loans and return on investments. Most of the big banks and financial institutions had gotten away with risky and unethical behavior done at the expense of the owners funds; Presenting various bogus charges, transaction fees and restraints placed that hinder asset transaction and transfer. Alpha Oil broke in, allowing its users access to services such as crypto management, crypto backed loans where users could deposit coins as collateral to obtain loans in stable currencies. It also encourages encourages
+         users to stake cryptocurrency on DeFi Locked staking pools providing Liquidity and enjoying rewarding APY’sq on coins staked.  <br/> Since its inception, the Alpha Oil platform has experienced significant growth. The number of active users growing with about 80% in the second quarter. This can be broken down to a weekly average growth of 3.06% increase in the number of users. The Alpha Oil Platform boasts of over 52,000 users at the moment and holds more than $44 million in community deposits for users. Alpha Oil offers high interest-earning savings accounts, low-interest borrowing fees and a solid security system.
+         </p>
+         </div>
+         </div>
+         </div>
+         </div>
+         </li>
+
+         </ol>
+         </div>
+         </section>-->
+      <!-- Start Dibiz Features Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">Why choose Alpha Oil</h1>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-diamond"></i>Secure Operations</a>
+                     </h3>
+                     <p>Alpha Oil applies industry-leading safety systems, operational controls, and risk management frameworks to protect personnel, assets, and the environment across all operations.</p>
+                    </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-conversation"></i>Asset & Production Management</a>
+                     </h3>
+                    <p>We deploy proven engineering and operational strategies across exploration, production, FPSO operations, and logistics to ensure consistent output and asset integrity.</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"> <i class="flaticon-share-icon"></i>
+                            Experienced Team</a>
+                     </h3><p>Alpha Oil’s leadership and technical teams bring 15+ years of experience across oil & gas operations, offshore engineering, and energy markets.</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-darts"></i> Risk control</a>
+                     </h3><p>Our teams specialize in operational, market, and environmental risk management — protecting assets, supply chains, and project economics.</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"> <i class="flaticon-competitor"></i>Continuous Development</a>
+                     </h3><p>We continuously invest in operational improvements, digital monitoring, and process optimization to meet evolving industry and regulatory requirements.</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <h3>
+                        <a href="#"><i class="flaticon-megaphone"></i> Better customer support</a>
+                     </h3><p>Our clients receive direct access to technical, commercial, and operational teams — ensuring responsive support across every stage of the energy lifecycle.</p></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Dibiz Features Area -->
+      <!-- Start Featured Services Area -->
+      <section class="featured-services-area pb-70">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-research"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">Multi-Market Reach</a></h3>
+                     <p>Alpha Oil supports energy supply across upstream production, offshore fields, and global trading routes — ensuring reliability and flexibility.</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-speed"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">The Best Market Prices</a></h3>
+                     <p>Our market expertise and logistics optimization deliver competitive pricing aligned with global benchmarks.</p>
+                      </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-email-marketing"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">Operational Efficiency</a></h3>
+                     <p>Real-time monitoring and disciplined execution ensure consistent production and immediate operational response.</p></div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                  <div class="single-featured-services-box">
+                     <div class="icon">
+                        <i class="flaticon-keywords"></i>
+                        <div class="circles-box">
+                           <div class="circle-one"></div>
+                           <div class="circle-two"></div>
+                        </div>
+                     </div>
+                     <h3><a href="#">Scalable Capacity</a></h3>
+                     <p>We support projects ranging from single offshore assets to large-scale production and trading operations.</p></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Start Dibiz Features Area -->
+      <div class="dibiz-features-area pt-100 pb-75">
+         <div class="container">
+            <h1 align = "center">
+            Our Strategic Partners</h2>
+            <br/>
+            <div class="row justify-content-center">
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/images/ledger.png" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Secure Operations & Engineering.</a>
+                     </h3>
+                     <p>Advanced offshore engineering and asset integrity solutions</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInDown" data-wow-delay="200ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/63c14ba144d4cf7d4defdd8a_Magic-Square-New-Logo-Light-Backgrounds.svg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Offshore & FPSO Services</a>
+                     </h3>
+                     <p>Specialized partners supporting floating production, storage, and offloading operations.</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeed39f4004c58c2736d_fireblocks-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Energy Logistics & Trading</a>
+                     </h3>
+                     <p>Global logistics and energy trading infrastructure.</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeeeab837a3615e1ab4d_elliptic-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Compliance & Regulation</a>
+                     </h3>
+                     <p>Ensuring adherence to international safety, environmental, and operational standards.</p></div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeedf19bb0f0fd76f978_ondato-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Environmental & Safety Systems</a>
+                     </h3>
+                     <p>Monitoring, reporting, and risk management solutions.</p> </div>
+               </div>
+               <div class="col-lg-4 col-sm-6">
+                  <div class="dibiz-features-card wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1000ms">
+                     <div class="features-image">
+                        <a href="#"><img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cbdeedb3273f789ca625ac_sumsub-logo.jpg" alt="image"></a>
+                     </div>
+                     <h3>
+                        <a href="#">Safety and Sustainability</a>
+                     </h3><p>Safety and environmental responsibility are core to Alpha Oil’s operations. We apply industry best practices across health, safety, environment, and asset protection. Our operations follow international standards for offshore safety, environmental management, and operational integrity.
+
+                        We conduct regular external audits, continuous risk assessments, and workforce training to ensure compliance with global regulations and to protect people, assets, and the environment.
+
+                        At Alpha Oil, responsible energy development is not optional — it is fundamental to how we operate.</p></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Dibiz Features Area -->
+      <!-- Start SEO Analysis Area -->
+       <!--
+      <div class="seo-analysis-area ptb-100" style = "background-color:#064E3B;">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-6 col-md-12">
+                  <div class="analysis-form">
+                     <h2 style = "color:white;">Safety and Security</h2>
+                     <p style = "color:white;">All operations at Alpha Oil are 100% secure. Alpha Oil follows all the industry best practices for IT security checks, data protection, access rights, and data encryption.
+                        Alpha Oil uses Ledger Vault's industry leading information technology infrastructure to securely control its crypto assets with a multi-authorization self-custody management solution and $150 million pooled crime insurance.
+                        All credit card operations are under PCI Security Standards, all crypto operations – in accordance with Cryptocurrency Security Standard (CCSS). We run external security audits on a regular basis.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="analysis-img">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61d83fe2acd2f6d2d2380a44_ledger-entreprise-solutions-logo.svg" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5ef44f28e5eccc0d604d741f_elliptic_white-p-500.png" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/61cae1ec150c45092fb90153_logo_fireblocks.svg" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da869afea5d9ef46607715e_secure_logo_pcidss.png" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da8cb535df54b8b1ed31c97_secure_logo_ccss.png" alt="Image" width = "150">
+                     <img src="/static/assets-global.website-files.com/5cc19fbd198b8d31a9c64876/5da869af4dcf8c3d4fb8ab66_secure_logo_dsec.svg" alt="Image" width = "150">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <!-- End SEO Analysis Area -->
+      <!-- Start Subscribe Area -->
+      <section class="subscribe-area ptb-100">
+         <div class="container">
+            <div class="subscribe-content">
+               <span class="sub-title">Latest Market News & Updates</span>
+               <h2>Subscribe To Our Newsletter</h2>
+               <p>Subscribe to Alpha Oil Newsletters — the best way to stay informed about how bitcoin, cryptocurrencies and digital assets are transforming the global financial systems.</p>
+               <form action="" class="newsletter-form" data-bs-toggle="validator" method="post" accept-charset="utf-8">
+                  <input type="text" class="input-newsletter" placeholder="Enter your email address" name="EMAIL" required autocomplete="off" required>
+                  <button type="submit" class="default-btn">Subscribe Now</button>
+                  <div id="validator-newsletter" class="form-result"></div>
+               </form>
+            </div>
+         </div>
+         <div class="shape9"><img src="/static/assets/img/shape/shape9.png" alt="image"></div>
+         <div class="shape10"><img src="/static/assets/img/shape/shape10.png" alt="image"></div>
+         <div class="shape11"><img src="/static/assets/img/shape/shape11.png" alt="image"></div>
+         <div class="shape12"><img src="/static/assets/img/shape/shape12.png" alt="image"></div>
+      </section>
+      <!-- End Subscribe Area -->
+      <!-- Start Footer Area -->
+      <footer class="footer-area ds-footer-area">
+        <div class="container">
+           <div class="row">
+              <div class = "col-lg-6" style = "color:white;">
+               Alphaoil Energy Capital is a multi-faceted energy investment and asset management platform providing access to oil, gas, real assets, and structured financial solutions. We enable investors to move beyond speculation toward disciplined, asset-backed strategies.
+              </div>
+              <div class = "col-lg-6" style = "color:white;">
+               We operate under strict governance standards and respect investor privacy. Assets remain under defined ownership structures, and we do not exercise discretionary control without authorization.
+                 <br/><br/>
+              </div>
+              <br/>
+              <hr style = "color:white;"/>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="single-footer-widget">
+                    <a href="{% url 'home' %}" class="logo">
+                       <img src="/static/front_pages/lionhead.png" style="height: 80px; width: 80px;">
+                    </a>
+                    <p>Alphaoil Hedge is a non-custodial digital service, which means you own the keys. We respect your privacy. We never have access to, or knowledge of, your digital assets — only you do. </p>
+                    <ul class="social-link">
+                       <li><a href="" class="d-block" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                       <li><a href="" class="d-block" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                       <li><a href="" class="d-block" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                       <li><a href="" class="d-block" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                       <li><a href="" class="d-block" target="_blank"><i class="bx bxl-youtube"></i></a></li>
+                       <li><a href="" class="d-block" target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                 <div class="single-footer-widget ps-5">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                       <li><a href="{% url 'home' %}">Home</a></li>
+                       <li><a href="{% url 'signin' %}">Login To AlphaOil</a></li>
+                       <li><a href="{% url 'signup' %}">Create an AlphaOil account</a></li>
+                       <li><a href="{% url 'reset_password' %}">Reset Password</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                 <div class="single-footer-widget ps-5">
+                    <h3>Resources</h3>
+                    <ul class="footer-links-list">
+                       <li><a href="{% url 'plan' %}">Plans</a></li>
+                       <li><a href="{% url 'contact' %}">Jobs & Careers</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                 <div class="single-footer-widget ps-5">
+                    <h3>Company</h3>
+                    <ul class="footer-links-list">
+                       <li><a href="{% url 'privacy' %}">Privacy policy</a></li>
+                       <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                       <li><a href="#">Legal</a></li>
+                       <li><a href="#">Affiliate Program</a></li>
+                       <li><a href="">Our Brochure is being prepared for 2024</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="single-footer-widget ps-5">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact-info">
+                       <!-- <li>
+                          <i class="bx bx-map"></i>
+                          <span>Location:</span>
+                          2976 sunrise road las vegas
+                          </li>-->
+                       <li>
+                          <i class="bx bx-envelope"></i>
+                          <span>Email:</span>
+                          <a href="mailto:support@Alphaoilhedge.com"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d7dad1dac99dd0dcde">support@Alphaoilhedge.com</span></a>
+                       </li>
+                       <li>
+                          <i class="bx bxs-phone"></i>
+                          <span>Phone: +Encrypted</span>
+                          <a href="tell:+Encrypted">+Encrypted</a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="footer-bottom-area">
+           <p>All rights reserved. Alphaoilhedge.com </p>
+        </div>
+     </footer>
+      <!-- End Footer Area -->
+      <div class="go-top"><i class="bx bx-up-arrow-alt"></i></div>
+      <a class= "open-button">
+         <div id="google_translate_element"></div>
+         <script data-cfasync="false" src="/static/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: "en", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, "google_translate_element");
+                    }
+         </script>
+         <script type="text/javascript" src="/static/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+      </a>
+      <style>
+         div.static {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         z-index: 2000;
+         }
+         .open-button {
+         padding: 13px 17px;
+         border-radius: 30px;
+         cursor: pointer;
+         opacity: 0.8;
+         position: fixed;
+         bottom: 80px;
+         margin-right: 70px;
+         width: 200px;
+         z-index: 1500;
+         background-color:#064E3B;
+         }
+      </style>
+      <div class = "static">
+         <!-- TradingView Widget BEGIN -->
+         <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="/static/s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+               {
+               "symbols": [
+                 {
+                   "proName": "BITSTAMP:BTCUSD",
+                   "title": "BTC/USD"
+                 },
+                 {
+                   "proName": "BITSTAMP:ETHUSD",
+                   "title": "ETH/USD"
+                 },
+                 {
+                   "description": "DOGE",
+                   "proName": "BITFINEX:DOGEUSD"
+                 },
+                 {
+                   "description": "USDT",
+                   "proName": "KRAKEN:USDTUSD"
+                 },
+                 {
+                   "description": "BNB",
+                   "proName": "BINANCE:BNBUSD"
+                 },
+
+                 {
+                   "description": "XRP",
+                   "proName": "BITFINEX:XRPUSD"
+                 },
+                 {
+                   "description": "UNISWAP",
+                   "proName": "BITTREX:UNIUSD"
+                 },
+                 {
+                   "description": "XLM",
+                   "proName": "KRAKEN:XLMUSD"
+                 },
+                 {
+                   "description": "THETA",
+                   "proName": "KUCOIN:THETAUSDT"
+                 },
+                 {
+                   "description": "XMR",
+                   "proName": "BITFINEX:XMRUSD"
+                 },
+                 {
+                   "description": "ALGO",
+                   "proName": "KRAKEN:ALGOUSD"
+                 },
+                 {
+                   "description": "AAVE",
+                   "proName": "BINANCE:AAVEBTC"
+                 },
+                 {
+                   "description": "TEZOS",
+                   "proName": "BINANCE:XTZBTC"
+                 },
+                 {
+                   "description": "DASH",
+                   "proName": "KRAKEN:DASHUSD"
+                 },
+                 {
+                   "description": "ZCASH",
+                   "proName": "BITFINEX:ZECUSD"
+                 },
+                 {
+                   "description": "YFI",
+                   "proName": "BITKUB:YFITHB"
+                 },
+                 {
+                   "description": "ADA",
+                   "proName": "BINANCE:ADABTC"
+                 }
+               ],
+               "showSymbolLogo": true,
+               "colorTheme": "dark",
+               "isTransparent": false,
+               "displayMode": "adaptive",
+               "locale": "en"
+               }
+            </script>
+         </div>
+         <!-- TradingView Widget END -->
+      </div>
+      <!-- Links of JS files -->
+      <script src="/static/assets/js/jquery.min.js"></script>
+      <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/assets/js/appear.min.js"></script>
+      <script src="/static/assets/js/odometer.min.js"></script>
+      <script src="/static/assets/js/magnific-popup.min.js"></script>
+      <script src="/static/assets/js/fancybox.min.js"></script>
+      <script src="/static/assets/js/owl.carousel.min.js"></script>
+      <script src="/static/assets/js/meanmenu.min.js"></script>
+      <script src="/static/assets/js/nice-select.min.js"></script>
+      <script src="/static/assets/js/sticky-sidebar.min.js"></script>
+      <script src="/static/assets/js/wow.min.js"></script>
+      <script src="/static/assets/js/form-validator.min.js"></script>
+      <script src="/static/assets/js/contact-form-script.js"></script>
+      <script src="/static/assets/js/ajaxchimp.min.js"></script>
+      <script src="/static/assets/js/main.js"></script>
+      <script src="https://www.cryptohopper.com/widgets/js/script"></script>
+   </body>
+   <!-- Mirrored from Alpha Oil.org/about by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 05:02:01 GMT -->
+</html>
